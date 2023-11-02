@@ -4,139 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB DE PRODUCTO</title>
-    <!-- Añadimos el favicon -->
-    <link href="media/img/Favicon.svg" rel="icon" type="image/png"> 
-    <!-- Enlace a la librería de iconos Font Awesome -->
-    <script src="https://kit.fontawesome.com/bf9108fbd8.js" crossorigin="anonymous"></script>
-    <!-- Enlaces a css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cookie Banner</title>
 </head>
-
-
 <body>
-    <header>
-        <!-- NAV -->
-        <nav  class="navbar navbar-expand-lg bg-body-tertiary" id="menu" class="navbar">
-            <div>
-                <i class="fa-solid fa-bars"></i>
-                <a class="navbar-brand"href="#">
-                    <img src="media/img/Logo_Jully.svg" alt="Logo Jully">
-                </a>
-            </div>
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">COLECCIÓN CÁPSULA <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">MÁS VENDIDOS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">JOYAS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">ANILLOS</a>
-                        <a class="dropdown-item" href="#">PULSERAS</a>
-                        <a class="dropdown-item" href="#">PENDIENTES</a>
-                        <a class="dropdown-item" href="#">PENDIENTES</a>
-                    </div>
-                    </li>
-            </ul> 
-
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </div>
-        </nav>
-
-
-        <!-- CARRUSEL -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="media/img/Joya 1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="media/img/Joya 2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="media/img/Joya 3.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="media/img/Joya 4.jpg" alt="Fourth slide">
-                </div>
-            </div>
+    <div class="cookie-banner-container">
+        <div class="jully-logo">
+            <img src="media/img/JULLY.svg" alt="Jully logo">
         </div>
+    
+        <p class="cookie-info">
+            Tanto nosotros como nuestros asociados almacenamos y/o accedemos a la información en un dispositivo, como los identificadores únicos en las cookies para tratar datos personales. Se puede aceptar o gestionar las preferencias haciendo clic en el enlace que aparece a continuación o en cualquier momento en la página de <u><b>Política de Cookies</b></u>. Estas preferencias serán notificadas a nuestros socios y no afectarán a los datos de navegación.
+            </p>
+        </p>
 
-        <!-- TEXTO COLECCCION CAPSULA -->
-        <div class="texto_coleccion">
-            <div>
-                <h2>COLECCIÓN</h2>
-                <h1>CÁPSULA</h1>
-            </div>
-            <div>
-                <a href="">
-                    <button type="button" class="btn btn-outline-dark">
-                            <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </a>
-            </div>            
+        <div class="buttons">   
+             <button class="confirm-button">ACEPTAR</button>
+             <button class="reject-button">RECHAZAR</button>
         </div>
-    </header>
-
-    <main>
-        <section id="">
-            
-        </section>
-
-        <section id="deslumbra">
-            <h2>DESLUMBRA</h3>
-            <p>Eleva tus outits con los mejores diseños</p>
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col">
-                    <img src="media/img/Foto 4.jpg" alt="">
-                    <a href="">
-                        <button type="button" class="btn btn-outline-dark">
-                            COLLARES
-                        </button>
-                    </a>
-                  </div>
-                  <div class="col">
-                    <img src="media/img/Foto 5.jpg" alt="">
-                    <a href="">
-                        <button type="button" class="btn btn-outline-dark">
-                            ANILLOS
-                        </button>
-                    </a>
-                  </div>
-                  <div class="col">
-                    <img src="media/img/Foto 6.jpg" alt="">
-                    <a href="">
-                        <button type="button" class="btn btn-outline-dark">
-                            PULSERAS
-                        </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-        <section>
-            <h2>COLECCIÓN CÁPSULA</h2>
-        </section>
-
-        <section>
-            <h2>DESLUMBRA</h2>
-        </section>
-
-    </main>
-    <footer>
         
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+        <a class="second-button">Check cookie policy</a>
+    </div>
+    
+    
 </body>
 </html>
