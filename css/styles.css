@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'myFirstFont';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,14 +12,16 @@ h1{
 }
 h2{
     font-size: 3vw;
+    font-family: 'myFirstFont';
 }
 h3{
     font-size: 10vw;
+    font-family: 'myFirstFont';
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(NeueMontreal-Bold.otf);
+    font-family: 'myFirstFont';
+    src: url('NeueMontreal-Regular.otf') format('otf');
 }
 
 :root {
@@ -29,7 +31,7 @@ h3{
 
 
 /* MENU */
-
+/* nav */
 #menu{
     display: flex;
     flex-direction: row;
@@ -79,6 +81,10 @@ nav{
     z-index: 30;
 }
 
+/* CARRUSEL */
+.carousel > div:nth-child(2) > img{
+    transform: scaleX(-1);
+}
 
 /* TEXTO COLECCION */
 .texto_coleccion{
@@ -125,10 +131,11 @@ nav{
 }
 .col> img{
     max-width: 50%;
-    font-family: myFirstFont;
+    
 }
 
 
 #deslumbra{
     margin-top: 5em;
+    font-family: 'myFirstFont';
 }
