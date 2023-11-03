@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'myFirstFont';
+    font-family: 'Neue';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,16 +12,14 @@ h1{
 }
 h2{
     font-size: 3vw;
-    font-family: 'myFirstFont';
 }
 h3{
     font-size: 10vw;
-    font-family: 'myFirstFont';
 }
 
 @font-face {
-    font-family: 'myFirstFont';
-    src: url(../media/fonts/NeueMontreal-Regular.otf) format('otf');
+    font-family: 'Neue';
+    src: url('media/fonts/NeueMontreal-Regular.otf') format('otf');
 }
 
 :root {
@@ -33,47 +31,23 @@ h3{
 
 /* MENU */
 
-/* nav */
+/* HEADER */
 header{
     height: 100vh;
     overflow: hidden;
 }
 
+/* NAV */
 #menu{
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     height: 4em;
     border: 1em;
     border-color: black;
     z-index: 1;
     background-color: white;
-}
-
-#menu > :nth-child(1){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 2em;
-    width: 10em;
-}
-
-#menu > :nth-child(2){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 35em;
-}
-
-#menu > :nth-child(3){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 10em;
-    justify-content: space-evenly;
 }
 
 nav{
@@ -87,6 +61,48 @@ nav{
     z-index: 30;
 }
 
+#menu > :nth-child(1){
+    margin-left: 2em;
+}
+
+#menu > :nth-child(1) > i{
+    display: none;
+}
+
+#logo{
+    max-width: 70%;
+}
+
+/* BOTONES MENU CENTRAL */
+#menu > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 35em;
+}
+
+/* BOTONES MENU DCHA */
+#menu > :nth-child(3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10em;
+    justify-content: space-evenly;
+    margin-RIGHt: 2em;
+}
+
+
+
+
+
+/* CARRUSEL */
+.carousel{
+    top: 4em;
+}
+
+
+
 
 
 /* TEXTO COLECCION */
@@ -94,9 +110,9 @@ nav{
     display: flex;
     flex-direction: row;
     top: 35vw;
-    z-index: 2;
+    z-index: 0;
     position: absolute;
-
+    margin-left: 5em;
 }
 
 /* BOTON */
@@ -128,6 +144,9 @@ nav{
     border: 2px solid #000000;
 }
 
+
+
+
 /* MAIN */
 body{
     background-color: var(--bg-color);
@@ -142,7 +161,7 @@ body{
     border: none;
     outline: none;
     background-color: var(--color);
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
@@ -175,6 +194,20 @@ body{
     font-family: 'myFirstFont';
 }
 
+#deslumbra > div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 2em;
+}
+
+#deslumbra > div > h2{
+    font-size: 15vw;
+}
+
+#deslumbra > div > div> p{
+    font-size: 3vw;
+}
 /* SECCION 3 */
 
 
