@@ -9,36 +9,11 @@ body{
     width: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.cookie-banner-container{
-    height: 40%;
-    width: 90vw;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    background-color:#F8F2EA;
-    border-radius: 0px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-direction: column;
-    box-sizing: border-box;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0%);
 }
 
-
-@keyframes go-down{
-    0%{
-        transform: translate(-50%, -260%);
-    }40%{
-        transform: translate(-50%, -260%);
-    }
+#confirm-button{
+    background-color: black;
 }
 
 .title{
@@ -47,25 +22,33 @@ body{
     line-height: 28px;
 }
 
+.confirm-button {
+    background-color: #9EC9FF;
+
+}
+
+.reject-button {
+    background-color: white;
+}
+
 .cookie-info{
+    text-align: justify;
+    font-size: 0.7em;
+    color: black;
+    padding:10px 30px 30px 30px;
     text-align: left;
-    margin-bottom: 1rem;
-    font-size: 0.8em;
-    color: #121212;
-    padding:5px 30px 20px 30px;
 }
 
 .buttons button{
-    width: 9em;
-    height: 2.5em;
+    width: 11em;
+    height: 2.4em;
     justify-content:center;
     align-items: center;
     display: flex;
-    background-color: white;
-    color: black;
+    border-color: black;
     border-radius: 30px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9em;
     margin-left:17px;
     
 }
@@ -77,42 +60,39 @@ body{
     transition-duration: 1s;
     opacity: 1;
     padding-right: 30px;
-    
-
 }
 
 .buttons :hover{
 
-    background: #9EC9FF; 
+    transition-delay: 0s;
+    opacity: 1;
+    background: black; 
     color: #ffffff; 
-    
-
+    font-weight: 500;
 }
 
-.buttons button:active{ 
-    
-    background: #1A1A1F; 
-    color: #ffffff; 
+
+.buttons :active{ 
+   animation:go-down-cookies 0.8s;
+   background: black;
 }
 
 
 .second-button{
-    color: gray;
-    margin-top: 10px;
+    color: rgb(99, 99, 99);
     font-size: 11px;
     margin-left: 30px;
     margin-bottom: 15px;
+    display: flex;
+    align-content: center;
 }
 
 
 .jully-logo{
-    display: flex;
+
     border-bottom: inset;
-    padding: 4px;
-    justify-content: left;
     border-width: 1px;
-    border-style: solid;
-    border-color: black;
+    border-color: black ;
     background-color: #9EC9FF;
     padding: 5px 3px 5px 30px;
     align-content: center;
@@ -121,22 +101,31 @@ body{
 
 img{
     width:5%;
-    align-content: center;
+    display: flex;
 }
 
 .cookie-banner-container{
-    height: 40%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 30%;
     overflow: hidden;
     position: absolute;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0%);
-    animation: show-cookies 2s;
+    animation: show-cookies 1s;
+    width: 95vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color:#F8F2EA;
+    border-radius: 0px;
+    box-shadow: 0px 4px 8px rgba(90, 90, 90, 0.1);
 }
+
+/* responsive tablet */
 
 @keyframes show-cookies{
     0%{
@@ -146,10 +135,87 @@ img{
     }
 }
 
-@keyframes go-down{
-    0%{
-        transform: translate(-50%, -260%);
-    }40%{
-        transform: translate(-50%, -260%);
+@media (max-width: 991.98px) {
+    .cookie-info {
+        font-size: 0.6em;
+        padding: 0px 20px 60px 20px;
+        text-align: justify;
     }
+    .cookie-banner-container {
+        height: 35%;     
+    
+    }
+
+
+    .buttons{
+        padding-right: 20px;
+    }
+
+    .jully-logo {
+        padding: 5px 3px 5px 20px;
+        
+    }
+    .buttons button{
+        font-size:0.8em;
+        width: 10.5em;
+        height: 2.6em;
+
+    }
+    
+    .hidden-info {
+        opacity:1;
+    }
+
+    .second-button{
+        font-size: 0.5em;
+        margin-left: 20px;
+    }
+ }
+
+ /* responsive movil */
+
+ @media only screen and (max-width: 576px) {
+
+    .cookie-info {
+         margin: 5px 15px 7px 15px;
+         padding:0;
+         font-size: 0.5em;
+         text-align:justify;
+    }
+
+    .jully-logo{
+        padding:5px 3px 5px 15px;
+    }
+    img {
+        width:10%;
+    }
+    
+    .buttons button {
+        font-size: 0.7em;
+        width: 100%;
+        height: 2.9em;
+        margin: 0.3em;
+    
+    }
+
+    .buttons {
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0;
+        padding-left:15px;
+        padding-right:15px;
+
+    }
+
+    .second-button {
+    margin-left: 15px;
+    margin-bottom: 12px;
+    }
+    
+    
+
+        
 }
