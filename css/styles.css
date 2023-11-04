@@ -1,4 +1,33 @@
 * {
+<<<<<<< Updated upstream
+    margin: 0;
+<<<<<<< Updated upstream
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0%;
+    
+}
+=======
+    font-family: 'neue_montrealregular';
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Alazne- He añadido la fuente Neue */
+@font-face {
+    font-family: 'neue_montrealregular';
+    src: url('neuemontreal-regular-webfont.woff2') format('woff2'),
+         url('neuemontreal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em 1em 0em 1em;
+=======
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -11,10 +40,6 @@ body {
   position: relative;
   overflow: hidden;
   display: flex;
-}
-
-#confirm-button {
-  background-color: black;
 }
 
 .title {
@@ -40,7 +65,7 @@ body {
 }
 
 .buttons button {
-  width: 10em;
+  width: 11em;
   height: 2.4em;
   justify-content: center;
   align-items: center;
@@ -70,8 +95,8 @@ body {
 }
 
 .buttons :active {
-  animation: go-down-cookies 0.8s;
-  background: black;
+  opacity: 0;
+
 }
 
 .second-button {
@@ -128,6 +153,8 @@ img {
     transform: translate(-50%, 0%);
   }
 }
+
+
 
 @media (max-width: 991.98px) {
   .cookie-info {
@@ -201,4 +228,15 @@ img {
     margin-left: 15px;
     margin-bottom: 12px;
   }
+>>>>>>> Stashed changes
 }
+
+#menu > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    justify-content: space-evenly;
+}
+
+>>>>>>> Stashed changes
