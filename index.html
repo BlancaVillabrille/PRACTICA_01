@@ -11,7 +11,10 @@
     <script src="https://kit.fontawesome.com/bf9108fbd8.js" crossorigin="anonymous"></script>
     <!-- Enlaces a css -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
+
 </head>
 
 
@@ -21,25 +24,24 @@
         <nav  class="navbar navbar-expand-lg bg-body-tertiary" id="menu" class="navbar">
             <div>
                 <i class="fa-solid fa-bars"></i>
-                <a class="navbar-brand"href="#">
-                    <img src="media/img/Logo_Jully.svg" alt="Logo Jully">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="media/img/Logo_Jully.svg" alt="Logo Jully">
                 </a>
             </div>
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">COLECCIÓN CÁPSULA <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="colec_cap.html">COLECCIÓN CÁPSULA <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">MÁS VENDIDOS</a>
+                    <a class="nav-link" href="#MasVendidos">MÁS VENDIDOS</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">JOYAS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">ANILLOS</a>
-                        <a class="dropdown-item" href="#">PULSERAS</a>
-                        <a class="dropdown-item" href="#">PENDIENTES</a>
-                        <a class="dropdown-item" href="#">PENDIENTES</a>
+                        <a class="dropdown-item" href="">ANILLOS</a>
+                        <a class="dropdown-item" href="">PULSERAS</a>
+                        <a class="dropdown-item" href="">PENDIENTES</a>
                     </div>
                     </li>
             </ul> 
@@ -55,16 +57,16 @@
         <!-- CARRUSEL -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img class="d-block w-100" src="media/img/Joya 1.jpg" alt="First slide">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item"  data-bs-interval="2000">
                     <img class="d-block w-100" src="media/img/Joya 2.jpg" alt="Second slide">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img class="d-block w-100" src="media/img/Joya 3.jpg" alt="Third slide">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img class="d-block w-100" src="media/img/Joya 4.jpg" alt="Fourth slide">
                 </div>
             </div>
@@ -77,7 +79,7 @@
                 <h1>CÁPSULA</h1>
             </div>
             <div>
-                <a href="">
+                <a href="colec_cap.html">
                     <button type="button" class="btn btn-outline-dark">
                             <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -87,17 +89,17 @@
     </header>
 
     <main>
-        <section id="">
-            
-        </section>
+        <!-- BOTON SUBIR -->
+        <button id="button-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
 
-        <section id="deslumbra">
-            <h2>DESLUMBRA</h3>
-            <p>Eleva tus outits con los mejores diseños</p>
+        <!-- SECCIONES -->
+        <section data-aos="fade-up" id="minimenu">
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
-                    <img src="media/img/Foto 4.jpg" alt="">
+                    <img src="media/img/Collar 1.png" alt="">
                     <a href="">
                         <button type="button" class="btn btn-outline-dark">
                             COLLARES
@@ -105,7 +107,7 @@
                     </a>
                   </div>
                   <div class="col">
-                    <img src="media/img/Foto 5.jpg" alt="">
+                    <img src="media/img/anillo.png" alt="">
                     <a href="">
                         <button type="button" class="btn btn-outline-dark">
                             ANILLOS
@@ -113,7 +115,7 @@
                     </a>
                   </div>
                   <div class="col">
-                    <img src="media/img/Foto 6.jpg" alt="">
+                    <img src="media/img/Pulsera 1.png" alt="">
                     <a href="">
                         <button type="button" class="btn btn-outline-dark">
                             PULSERAS
@@ -124,18 +126,72 @@
               </div>
         </section>
 
-        <section>
-            <h2>COLECCIÓN CÁPSULA</h2>
+        <section id="deslumbra">
+            <div data-aos="fade-up">
+                <h2>DESLUMBRA</h3>
+                <div>
+                    <p>Eleva tus outits con los mejores diseños</p>
+                </div>
+            </div>
+            
+            <div data-aos="fade-up" class="seen_pelis">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="thumbtiles swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile"  >
+                                <img class="thumbtileimg" src="media/img/Pañuelo 3.png" alt="Campeones">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile" >
+                                <img  class="thumbtileimg"src="media/img/Pañuelo 3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile"  >
+                                <img class="thumbtileimg" src="media/img/Pañuelo 3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile"   >
+                                <img class="thumbtileimg" src="media/img/Pañuelo 3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile"   >
+                                <img class="thumbtileimg" src="media/img/Pañuelo 3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <a class="thumbtile"  >
+                                <img class="thumbtileimg" src="media/img/Pañuelo 3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+
         </section>
 
-        <section>
-            <h2>DESLUMBRA</h2>
+
+
+        <section id="MasVendidos">
+            <h2>LOS MÁS VENDIDOS</h2>
         </section>
+
+        
 
     </main>
     <footer>
         
     </footer>
+    <script>AOS.init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
