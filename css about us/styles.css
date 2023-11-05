@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* seccion businessmen azul*/
 .businessmen {
   background-color: blueviolet;
   display: flex;
@@ -45,6 +45,8 @@
   flex: 3;
 }
 
+/* seccion about rosada*/
+
 .about {
   background-color: blueviolet;
   display: flex;
@@ -64,6 +66,8 @@
   border-width: 1px;
 }
 
+/* seccion compromise morada */
+
 .compromise {
   background-color: #b37edb;
   display: flex;
@@ -75,6 +79,8 @@
 .about p {
   text-align: justify;
 }
+
+/* seccion location amarilla */
 
 .location{
   background-color: blueviolet;
@@ -90,7 +96,7 @@
   background-color: #F1CD4B;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em;
+  padding: 6.5em 3em 6.5em 6.5em;
   border-bottom: #000;
   border-width: 1px;
 }
@@ -99,15 +105,20 @@
   margin-bottom: 0.2em;
 }
 
+.findus a {
+  color: #000;
+}
+
 .google-maps {
   display: flex;
   flex: 1;
   background-color: #F1CD4B;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em;
+  padding: 6.5em 6.5em 6.5em 3em;
   border-bottom: #000;
   border-width: 1px;
+  padding-right: 6.5em;
 }
 
 
