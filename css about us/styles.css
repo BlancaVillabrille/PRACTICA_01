@@ -1,7 +1,27 @@
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+}
+
+.businessmen {
+  background-color: blueviolet;
+  display: flex;
+  height: 100vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.workers-photos {
+  background-color: #9ec9ff;
+  display: flex;
+  flex: 2;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  height: 100vh;
 }
 
 .workers-photos img {
@@ -14,38 +34,143 @@
   border-width: 1px;
 }
 
-.businessmen{
-  background-color: blueviolet;
-  display: flex;
-  height: 100vh;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.workers-photos{
-  background-color: #9ec9ff;
-  display: flex;
-  flex:2;
-  align-items: center;
-  align-content: stretch;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  height: 100vh;
-}
-
 .categories {
-  align-items:center;
+  align-items: center;
   align-content: center;
   background-color: #9ec9ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:100vh;
-  flex:3;
+  height: 100vh;
+  flex: 3;
 }
 
-.categories p{
-  margin:1em;
+.about {
+  background-color: blueviolet;
+  display: flex;
+  height: 60vh;
+  border-style: solid;
+  border-width: 1px;
 }
 
+.who {
+  display: flex;
+  flex: 1;
+  background-color: #f6a2f1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+  border-bottom: #000;
+  border-width: 1px;
+}
+
+.compromise {
+  background-color: #b37edb;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+}
+.about p {
+  text-align: justify;
+}
+
+.location{
+  background-color: blueviolet;
+  display: flex;
+  height: 60vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.findus {
+  display: flex;
+  flex: 1;
+  background-color: #F1CD4B;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+  border-bottom: #000;
+  border-width: 1px;
+}
+
+.findus p {
+  margin-bottom: 0.2em;
+}
+
+.google-maps {
+  display: flex;
+  flex: 1;
+  background-color: #F1CD4B;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+  border-bottom: #000;
+  border-width: 1px;
+}
+
+
+
+/* Botones businessmen section */
+.btn-2,
+.btn-2 *,
+.btn-2 :after,
+.btn-2 :before,
+.btn-2:after,
+.btn-2:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-2:disabled {
+  cursor: default;
+}
+.btn-2:-moz-focusring {
+  outline: auto;
+}
+.btn-2 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-2 [hidden] {
+  display: none;
+}
+.btn-2 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-2 span {
+  mix-blend-mode: difference;
+}
+.btn-2:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-2:hover:before {
+  --progress: 0;
+}
