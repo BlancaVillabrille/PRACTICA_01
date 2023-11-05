@@ -25,6 +25,11 @@ h3{
 :root {
     --color-azul: #9EC9FF;
     --bg-color: #F8F2EA;
+    --black: #1A1A1F;
+    --color-rosa: #F6A2F1;
+    --color-morado: #B37EDB;
+    --color-azul-sombra: #0D076B;
+    --color-amarillo:#F1CD4B;
 }
 
 
@@ -125,7 +130,7 @@ nav{
     border: 2px solid #000000;
     border-radius: 30px;
     padding: 0.2em 2em;
-    box-shadow: 0px 5px 0 0 #000000;
+    box-shadow: 0px 5px 0 0 var(--color-azul-sombra);
     position: relative;
     inset: 0;
     cursor: pointer;
