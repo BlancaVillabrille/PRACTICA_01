@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.workers-photos img {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.businessmen{
+  background-color: blueviolet;
+  display: flex;
+  height: 100vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.workers-photos{
+  background-color: #9ec9ff;
+  display: flex;
+  flex:2;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  height: 100vh;
+}
+
+.categories {
+  align-items:center;
+  align-content: center;
+  background-color: #9ec9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh;
+  flex:3;
+}
+
+.categories p{
+  margin:1em;
+}
+
