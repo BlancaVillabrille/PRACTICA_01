@@ -3,6 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
+h2,
+h1,
+p {
+  color: black;
+}
 /* seccion businessmen azul*/
 .businessmen {
   background-color: blueviolet;
@@ -82,7 +88,7 @@
 
 /* seccion location amarilla */
 
-.location{
+.location {
   background-color: blueviolet;
   display: flex;
   height: 60vh;
@@ -93,11 +99,11 @@
 .findus {
   display: flex;
   flex: 1;
-  background-color: #F1CD4B;
+  background-color: #f1cd4b;
   flex-direction: column;
   justify-content: center;
   padding: 6.5em 3em 6.5em 6.5em;
-  border-bottom: #000;
+  border-bottom: #0000;
   border-width: 1px;
 }
 
@@ -106,19 +112,223 @@
 }
 
 .findus a {
-  color: #000;
+  color: black;
 }
 
 .google-maps {
   display: flex;
   flex: 1;
-  background-color: #F1CD4B;
+  background-color: #f1cd4b;
   flex-direction: column;
   justify-content: center;
   padding: 6.5em 6.5em 6.5em 3em;
-  border-bottom: #000;
+  border-bottom: #000000;
   border-width: 1px;
   padding-right: 6.5em;
+}
+
+/* seccion newsletter */
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+.newsletter_wrapper {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter_wrapper h1 {
+  font-size: 2em;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 1.6em;
+}
+
+.newsletter_wrapper h1::before {
+  content: "";
+  position: absolute;
+  background: #dddddd;
+  width: 90px;
+  height: 1px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.newsletter_wrapper p {
+  color: #000000;
+  margin: 0em 20em 0em 20em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  }
+  
+
+
+.boton-enviar {
+  position: relative;
+}
+
+.placeholder {
+  margin: 1.4em 0em 0.8em 0em;
+  opacity: 1;
+  width: 20em;
+  height: 2.9em;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+}
+
+.placeholder input {
+  border-style: hidden;
+  width: 100%;
+  margin: 0px 0px 0px 23px;
+  background-color: transparent;
+}
+
+.enviar button {
+  width: 7em;
+  height: 2.9em;
+  border-style: hidden;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.enviar button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.newsletter_wrapper form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 20px;
+  border-left: 1px solid #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ec9ff;
+}
+
+
+.newsletter h1 {
+  margin-bottom: 0.7em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* footer section */
+
+.footer {
+  height: 45vh;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #F8F2EA;
+  flex-wrap: wrap;
+}
+
+.information{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.aboutus{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch; 
+}
+
+.youneedhelp{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.redeslogo{
+  height: 30vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #F8F2EA;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.redes{
+  width: 3em;
+  margin-right: 3em;
+  display: flex;
+  flex:1;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content:center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.redes i{
+  display: flex;
+  width:40px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+
+.logofooter{
+  display: flex;
+  margin-left: 3em;
+  flex:1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.logofooter img{
+  width: 7.5em;
 }
 
 
@@ -184,4 +394,12 @@
 }
 .btn-2:hover:before {
   --progress: 0;
+}
+
+/* newsletter */
+
+@media (max-width: 575px) {
+  .newsletter_wrapper form {
+    width: 88%;
+  }
 }
