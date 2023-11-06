@@ -1,3 +1,4 @@
+
 /* cookies */
 .cookies {
   height: 100vh;
@@ -155,12 +156,8 @@
 @media only screen and (max-width: 576px) {
   .cookie-info {
     margin: 0px 15px 10px 15px;
-    padding: 0;
-    font-size: 0.5em;
-    text-align: justify;
   }
-
-  .jully-logo {
+    .jully-logo {
     padding: 5px 3px 5px 15px;
   }
 
@@ -190,4 +187,248 @@
     margin-left: 15px;
     margin-bottom: 12px;
   }
+}
+@font-face {
+    font-family: 'Neue';
+    src: url('media/fonts/NeueMontreal-Regular.otf') format('otf');
+}
+
+:root {
+    --color-azul: #9EC9FF;
+    --bg-color: #F8F2EA;
+}
+
+
+
+/* MENU */
+
+/* HEADER */
+header{
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* NAV */
+#menu{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    height: 4em;
+    border: 1em;
+    border-color: black;
+    z-index: 1;
+    background-color: white;
+}
+
+nav{
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+#menu > :nth-child(1){
+    margin-left: 2em;
+}
+
+#menu > :nth-child(1) > i{
+    display: none;
+}
+
+#logo{
+    max-width: 70%;
+}
+
+/* BOTONES MENU CENTRAL */
+#menu > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 35em;
+}
+
+/* BOTONES MENU DCHA */
+#menu > :nth-child(3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10em;
+    justify-content: space-evenly;
+    margin-RIGHt: 2em;
+}
+
+
+
+
+
+/* CARRUSEL */
+.carousel{
+    top: 4em;
+}
+
+
+
+
+
+/* TEXTO COLECCION */
+.texto_coleccion{
+    display: flex;
+    flex-direction: row;
+    top: 35vw;
+    z-index: 0;
+    position: absolute;
+    margin-left: 5em;
+}
+
+/* BOTON */
+.btn {
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.5VW;
+    /* text-transform: uppercase; */
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 0.2em 2em;
+    box-shadow: 0px 5px 0 0 #000000;
+    position: relative;
+    inset: 0;
+    cursor: pointer;
+    transform: rotateX(0), rotateY(0) rotateZ(0);
+    display: inline-block;
+    outline: 2px dashed transparent;
+    transition: all 200ms ease;
+}
+
+.btn:hover {
+    inset: 6px 0 5.5px 0;
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
+    color: #000000;
+    background-color: white;
+    border: 2px solid #000000;
+}
+
+
+
+
+/* MAIN */
+body{
+    background-color: var(--bg-color);
+}
+#button-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--color);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* SECCION1 MINIMENU*/
+#minimenu{
+    margin-top: 3em;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-azul);
+}
+
+.col> img{
+    max-width: 50%;
+    
+}
+
+
+
+
+/* SECCION2 DESLUMBRA */
+
+#deslumbra{
+    margin-top: 5em;
+    font-family: 'myFirstFont';
+}
+
+#deslumbra > div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 2em;
+}
+
+#deslumbra > div > h2{
+    font-size: 15vw;
+}
+
+#deslumbra > div > div> p{
+    font-size: 3vw;
+}
+/* SECCION 3 */
+
+
+
+
+
+
+/* SLIDE PELÍCULAS PAG PRINCIPAL */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    color: var(--color);
+}
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    color: white;
+}
+
+.swiper-slide{
+    width: auto;
+}
+
+.thumbtileimg {
+    width: 20%;
 }
