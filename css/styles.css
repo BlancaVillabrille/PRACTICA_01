@@ -38,7 +38,7 @@ h3{
 
 /* HEADER */
 header{
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -104,6 +104,12 @@ nav{
 /* CARRUSEL */
 .carousel{
     top: 4em;
+    position: relative;
+}
+
+.carousel-item{
+    width: 100%;
+    object-fit: cover;
 }
 
 
