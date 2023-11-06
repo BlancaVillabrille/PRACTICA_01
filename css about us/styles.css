@@ -172,7 +172,6 @@ textarea:focus {
   }
   
 
-
 .boton-enviar {
   position: relative;
 }
@@ -312,9 +311,6 @@ textarea:focus {
  
 }
 
-
-
-
 .logofooter{
   display: flex;
   margin-left: 3em;
@@ -330,6 +326,26 @@ textarea:focus {
 .logofooter img{
   width: 7.5em;
 }
+
+/* copyright */
+
+.copyright{
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F2EA;
+}
+
+.copyright p{
+  margin:0.3em;
+}
+
+
+
+
+
+
 
 
 
