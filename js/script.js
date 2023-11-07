@@ -80,3 +80,10 @@ $(document).ready(function () {
   x.addListener(myFunction) // Attach listener function on state changes
 
 })
+
+
+$('.parallax-window').parallax({imageSrc: '/path/to/media/img/compromisoJully.jpg'});
+$('.parallax-window').parallax({
+  naturalWidth: 600,
+  naturalHeight: 400
+});

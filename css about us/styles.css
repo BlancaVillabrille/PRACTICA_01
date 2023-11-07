@@ -11,7 +11,7 @@ p {
 }
 /* seccion businessmen azul*/
 .businessmen {
-  background-color: blueviolet;
+  background-color:#9ec9ff;
   display: flex;
   height: 100vh;
   border-style: solid;
@@ -26,6 +26,7 @@ p {
   align-items: center;
   align-content: center;
   justify-content: space-around;
+  margin-left:2em;
 }
 
 .workers-photos img {
@@ -45,6 +46,7 @@ p {
   flex-direction: column;
   justify-content: center;
   flex: 2;
+  margin-left: 2em;
 }
 
 .categories button{
@@ -75,7 +77,7 @@ p {
   background-color: #9ec9ff;
   color: white;
 }
-.btn-outline-primary {
+.categories button:active {
   --bs-btn-active-color: white; 
   --bs-btn-active-bg: rgb(0, 0, 0);
   --bs-btn-active-border-color: rgb(0, 0, 0);
@@ -91,37 +93,106 @@ p {
   height: 60vh;
 }
 
+
+
 .who {
   display: flex;
   flex: 1;
   background-color: #f6a2f1;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em;
+  padding: 8.5em;
   border-right-style: solid;
   border-width: 1px;
 }
 
-/* seccion compromise morada */
 
-.compromise {
-  background-color: #b37edb;
+/* seccion about div class who */
+
+.whomedia {
   display: flex;
   flex: 1;
+  background-color: #B37EDB;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em;
+  border-right-style: solid;
+  border-width: 1px;
 }
+
+.whomedia img{
+  display: flex;
+  object-fit: cover;
+  width:100%;
+  height:auto;
+  border-style: solid;
+  border-width: 1px;
+}
+
 .about p {
   text-align: justify;
 }
+
+/* seccion compromise div class who */
+.about2 {
+  background-color: blueviolet;
+  display: flex;
+  height: 80vh;
+}
+
+
+
+.compromise {
+  display: flex;
+  flex: 1;
+  background-color:#B37EDB;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8.5em;
+  border-right-style: solid;
+  border-width: 1px;
+}
+.compromisemedia {
+  display: flex;
+  height: 60vh;
+  flex: 1;
+  background-color:#B37EDB;
+  flex-direction: column;
+  justify-content: center;
+  border-right-style: solid;
+  border-width: 1px;
+}
+
+.compromisemedia img{
+  display: flex;
+  object-fit: cover;
+  width:100%;
+  height:60vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.imagen_fondo{
+  background-image: url(../media/img/compromisoJully.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30em;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+
+
+
+
 
 /* seccion location amarilla */
 
 .location {
   background-color: blueviolet;
   display: flex;
-  height: 60vh;
+  height: 80vh;
   border-style: solid;
   border-width: 1px;
 }
@@ -166,7 +237,7 @@ textarea:focus {
 }
 
 .newsletter_wrapper {
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -174,15 +245,15 @@ textarea:focus {
   text-align: center;
   border-bottom-style: solid;
   border-width: 1px;
+  margin: 0em 28em 0em 28em;
 }
 
 .newsletter_wrapper h1 {
   font-size: 2em;
   color: #000000;
-  font-weight: 600;
   position: relative;
   text-transform: uppercase;
-  margin-bottom: 1.6em;
+  margin: 0em 28em 1.6em 28em;
   font-size: 2.3em;
 }
 
@@ -199,7 +270,6 @@ textarea:focus {
 
 .newsletter_wrapper p {
   color: #000000;
-  margin: 0em 22em 0em 22em;
   font-size: 1.2em;
   line-height: 1.2em;
   }
