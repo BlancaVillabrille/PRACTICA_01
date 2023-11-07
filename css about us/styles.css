@@ -15,19 +15,17 @@ p {
   display: flex;
   height: 100vh;
   border-style: solid;
-  border-width: 1px;
+  border-width:1px;
+
 }
 
 .workers-photos {
   background-color: #9ec9ff;
   display: flex;
-  flex: 2;
+  flex: 1.7;
   align-items: center;
-  align-content: stretch;
+  align-content: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  height: 100vh;
 }
 
 .workers-photos img {
@@ -41,15 +39,49 @@ p {
 }
 
 .categories {
-  align-items: center;
-  align-content: center;
+  align-content: left;
   background-color: #9ec9ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  flex: 3;
+  flex: 2;
 }
+
+.categories button{
+  display: flex;
+  align-items: center;
+  height: 8em;
+  width: 35em;
+  border-width: 0.1em;
+  border-color: white;
+  margin-bottom: 1.2em;
+  color: white;
+  border-radius: 70px;
+}
+
+.categories button a{
+  font-size: 5em;
+  padding-left:0.5em;
+}
+
+
+.categories button:hover{
+  background-color: white;
+  color: #9ec9ff;
+  border-color: white;
+}
+
+.categories button:active{
+  background-color: #9ec9ff;
+  color: white;
+}
+.btn-outline-primary {
+  --bs-btn-active-color: white; 
+  --bs-btn-active-bg: rgb(0, 0, 0);
+  --bs-btn-active-border-color: rgb(0, 0, 0);
+}
+
+
 
 /* seccion about rosada*/
 
@@ -57,8 +89,6 @@ p {
   background-color: blueviolet;
   display: flex;
   height: 60vh;
-  border-style: solid;
-  border-width: 1px;
 }
 
 .who {
@@ -68,7 +98,7 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 6.5em;
-  border-bottom: #000;
+  border-right-style: solid;
   border-width: 1px;
 }
 
@@ -142,6 +172,8 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
 .newsletter_wrapper h1 {
@@ -151,6 +183,7 @@ textarea:focus {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 1.6em;
+  font-size: 2.3em;
 }
 
 .newsletter_wrapper h1::before {
@@ -166,7 +199,7 @@ textarea:focus {
 
 .newsletter_wrapper p {
   color: #000000;
-  margin: 0em 20em 0em 20em;
+  margin: 0em 22em 0em 22em;
   font-size: 1.2em;
   line-height: 1.2em;
   }
@@ -179,7 +212,7 @@ textarea:focus {
 .placeholder {
   margin: 1.4em 0em 0.8em 0em;
   opacity: 1;
-  width: 20em;
+  width: 24em;
   height: 2.9em;
   background-color: white;
   display: flex;
@@ -230,7 +263,7 @@ textarea:focus {
 
 
 .newsletter h1 {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.6em;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -249,6 +282,10 @@ textarea:focus {
   background-color: #F8F2EA;
   flex-wrap: wrap;
 }
+
+.information a, .aboutus a, .youneedhelp a{
+  font-size: 0.9em;
+ } 
 
 .information{
   display: flex;
@@ -292,7 +329,6 @@ textarea:focus {
 }
 
 .redes{
-  width: 3em;
   margin-right: 3em;
   display: flex;
   flex:1;
@@ -305,11 +341,14 @@ textarea:focus {
 
 .redes i{
   display: flex;
-  width:40px;
+  width:1.5em;
+  height:0.5em;
   align-items: center;
   justify-content: center;
  
 }
+
+
 
 .logofooter{
   display: flex;
@@ -327,6 +366,8 @@ textarea:focus {
   width: 7.5em;
 }
 
+
+
 /* copyright */
 
 .copyright{
@@ -339,6 +380,8 @@ textarea:focus {
 
 .copyright p{
   margin:0.3em;
+  font-size: 0.8em;
+
 }
 
 
