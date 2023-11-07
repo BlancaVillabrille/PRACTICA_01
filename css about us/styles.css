@@ -174,10 +174,13 @@ p {
 .imagen_fondo{
   background-image: url(../media/img/compromisoJully.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:scroll;
+  /* parallex efecto  background-attachment: fixed; */
   background-size: cover;
-  height: 30em;
-  border-style: solid;
+  height: 85vh;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
   border-width: 1px;
 }
 
