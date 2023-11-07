@@ -11,12 +11,11 @@ p {
 }
 /* seccion businessmen azul*/
 .businessmen {
-  background-color:#9ec9ff;
+  background-color: #9ec9ff;
   display: flex;
   height: 100vh;
   border-style: solid;
-  border-width:1px;
-
+  border-width: 1px;
 }
 
 .workers-photos {
@@ -26,7 +25,7 @@ p {
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  margin-left:2em;
+  margin-left: 2em;
 }
 
 .workers-photos img {
@@ -46,10 +45,11 @@ p {
   flex-direction: column;
   justify-content: center;
   flex: 2;
-  margin-left: 2em;
+  margin-right: 2em;
+  margin-left: 1.5em;
 }
 
-.categories button{
+.categories button {
   display: flex;
   align-items: center;
   height: 8em;
@@ -61,29 +61,26 @@ p {
   border-radius: 70px;
 }
 
-.categories button a{
+.categories button a {
   font-size: 5em;
-  padding-left:0.5em;
+  padding-left: 0.5em;
 }
 
-
-.categories button:hover{
+.categories button:hover {
   background-color: white;
   color: #9ec9ff;
   border-color: white;
 }
 
-.categories button:active{
+.categories button:active {
   background-color: #9ec9ff;
   color: white;
 }
 .categories button:active {
-  --bs-btn-active-color: white; 
+  --bs-btn-active-color: white;
   --bs-btn-active-bg: rgb(0, 0, 0);
   --bs-btn-active-border-color: rgb(0, 0, 0);
 }
-
-
 
 /* seccion about rosada*/
 
@@ -92,8 +89,6 @@ p {
   display: flex;
   height: 60vh;
 }
-
-
 
 .who {
   display: flex;
@@ -106,24 +101,23 @@ p {
   border-width: 1px;
 }
 
-
 /* seccion about div class who */
 
 .whomedia {
   display: flex;
   flex: 1;
-  background-color: #B37EDB;
+  background-color: #b37edb;
   flex-direction: column;
   justify-content: center;
   border-right-style: solid;
   border-width: 1px;
 }
 
-.whomedia img{
+.whomedia img {
   display: flex;
   object-fit: cover;
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   border-style: solid;
   border-width: 1px;
 }
@@ -139,12 +133,10 @@ p {
   height: 80vh;
 }
 
-
-
 .compromise {
   display: flex;
   flex: 1;
-  background-color:#B37EDB;
+  background-color: #b37edb;
   flex-direction: column;
   justify-content: center;
   padding: 8.5em;
@@ -155,26 +147,26 @@ p {
   display: flex;
   height: 60vh;
   flex: 1;
-  background-color:#B37EDB;
+  background-color: #b37edb;
   flex-direction: column;
   justify-content: center;
   border-right-style: solid;
   border-width: 1px;
 }
 
-.compromisemedia img{
+.compromisemedia img {
   display: flex;
   object-fit: cover;
-  width:100%;
-  height:60vh;
+  width: 100%;
+  height: 60vh;
   border-style: solid;
   border-width: 1px;
 }
 
-.imagen_fondo{
+.imagen_fondo {
   background-image: url(../media/img/compromisoJully.jpg);
   background-repeat: no-repeat;
-  background-attachment:scroll;
+  background-attachment: scroll;
   /* parallex efecto  background-attachment: fixed; */
   background-size: cover;
   height: 85vh;
@@ -183,12 +175,6 @@ p {
   border-left-style: solid;
   border-width: 1px;
 }
-
-
-
-
-
-
 
 /* seccion location amarilla */
 
@@ -206,7 +192,7 @@ p {
   background-color: #f1cd4b;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em 3em 6.5em 6.5em;
+  padding: 6.5em 2em 6.5em 6.5em;
   border-bottom: #0000;
   border-width: 1px;
 }
@@ -231,6 +217,9 @@ p {
   padding-right: 6.5em;
 }
 
+.google-maps div {
+}
+
 /* seccion newsletter */
 
 button:focus,
@@ -248,7 +237,6 @@ textarea:focus {
   text-align: center;
   border-bottom-style: solid;
   border-width: 1px;
-  margin: 0em 28em 0em 28em;
 }
 
 .newsletter_wrapper h1 {
@@ -275,8 +263,7 @@ textarea:focus {
   color: #000000;
   font-size: 1.2em;
   line-height: 1.2em;
-  }
-  
+}
 
 .boton-enviar {
   position: relative;
@@ -334,13 +321,11 @@ textarea:focus {
   background-color: #9ec9ff;
 }
 
-
 .newsletter h1 {
   margin-bottom: 0.6em;
   overflow: hidden;
   white-space: nowrap;
 }
-
 
 /* footer section */
 
@@ -352,35 +337,17 @@ textarea:focus {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: left;
-  background-color: #F8F2EA;
+  background-color: #f8f2ea;
   flex-wrap: wrap;
 }
 
-.information a, .aboutus a, .youneedhelp a{
+.information a,
+.aboutus a,
+.youneedhelp a {
   font-size: 0.9em;
- } 
-
-.information{
-  display: flex;
-  flex:1;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
-  align-items: stretch;
 }
 
-.aboutus{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
-  align-items: stretch; 
-}
-
-.youneedhelp{
+.information {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -390,43 +357,60 @@ textarea:focus {
   align-items: stretch;
 }
 
-.redeslogo{
+.aboutus {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.youneedhelp {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.redeslogo {
   height: 30vh;
   display: flex;
   align-content: center;
   justify-content: space-evenly;
   text-align: left;
-  background-color: #F8F2EA;
+  background-color: #f8f2ea;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.redes{
+.redes {
   margin-right: 3em;
   display: flex;
-  flex:1;
+  flex: 1;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  align-content:center;
+  align-content: center;
   justify-content: flex-start;
   align-items: center;
 }
 
-.redes i{
+.redes i {
   display: flex;
-  width:1.5em;
-  height:0.5em;
+  width: 1.5em;
+  height: 0.5em;
   align-items: center;
   justify-content: center;
- 
 }
 
-
-
-.logofooter{
+.logofooter {
   display: flex;
   margin-left: 3em;
-  flex:1;
+  flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
@@ -435,35 +419,24 @@ textarea:focus {
   align-content: flex-start;
 }
 
-.logofooter img{
+.logofooter img {
   width: 7.5em;
 }
 
-
-
 /* copyright */
 
-.copyright{
+.copyright {
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F8F2EA;
+  background-color: #f8f2ea;
 }
 
-.copyright p{
-  margin:0.3em;
+.copyright p {
+  margin: 0.3em;
   font-size: 0.8em;
-
 }
-
-
-
-
-
-
-
-
 
 /* Botones businessmen section */
 .btn-2,
@@ -528,10 +501,86 @@ textarea:focus {
   --progress: 0;
 }
 
-/* newsletter */
+/* responsive movil */
 
-@media (max-width: 575px) {
+/* newsletter */
+@media only screen and (max-width: 576px) {
   .newsletter_wrapper form {
     width: 88%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* businessmen section */
+
+  .businessmen{
+    height: 88vh;
+  }
+  .categories button {
+    height: 7em;
+    width: 26em;
+  }
+
+  .workers-photos img {
+    width: 300px;
+    height: 450px;
+  }
+  
+  /* about */
+  .about{
+    height:44vh;
+  }
+  .about p {
+    text-align:start;
+}
+
+  .imagen_fondo{
+    height: 60vh;
+  }
+
+/* location */
+
+   .location{
+    flex-wrap:wrap;
+   }
+
+   .google-maps{
+    padding:0;
+    margin:0;
+    align-items: center;
+   }
+
+   .google-maps div{
+    display: flex;
+    width:65vh;
+   }
+
+  .findus{
+    justify-content: flex-end;
+    padding: 3em 2em 3em 3em;
+  }
+
+  .findus h2 {
+    font-size: 1.5em;
+}
+
+.findus p {
+  margin-bottom: 0.1em;
+}
+  .categories button a {
+    font-size: 3.9em;
+    padding-left: 0.5em;
+}
+
+  .who {
+    padding: 3em;
+  }
+
+  .who h1 {
+    font-size: 2em;
+  }
+
+  .compromise {
+    padding: 3em;
   }
 }
