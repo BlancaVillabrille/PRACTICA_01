@@ -26,9 +26,6 @@ $(document).ready(function () {
 
 
 
-
-
-
   function myFunction(x) {
     if (x.matches) { // If media query matches
       var swiper = new Swiper('.swiper', {
