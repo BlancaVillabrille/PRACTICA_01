@@ -82,8 +82,3 @@ $(document).ready(function () {
 })
 
 
-$('.parallax-window').parallax({imageSrc: '/path/to/media/img/compromisoJully.jpg'});
-$('.parallax-window').parallax({
-  naturalWidth: 600,
-  naturalHeight: 400
-});
