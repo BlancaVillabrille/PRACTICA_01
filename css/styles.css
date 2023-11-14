@@ -1,10 +1,25 @@
+:root {
+  --color-azul: #9EC9FF;
+  --bg-color: #F8F2EA;
+  --black: #1A1A1F;
+  --color-rosa: #F6A2F1;
+  --color-morado: #B37EDB;
+  --color-azul-sombra: #0D076B;
+  --color-amarillo:#F1CD4B;
+}
+
+
+
+
 
 /* cookies */
 .cookies {
-  height: 100vh;
-  width: 100%;
+  height: 50%;
   overflow: hidden;
   display: flex;
+  position: sticky;
+  z-index: 3;
+  bottom: 2em;
 }
 
 #confirm-button {
@@ -15,15 +30,8 @@
   background-color: #9ec9ff;
 }
 
-:root {
-    --color-azul: #9EC9FF;
-    --bg-color: #F8F2EA;
-    --black: #1A1A1F;
-    --color-rosa: #F6A2F1;
-    --color-morado: #B37EDB;
-    --color-azul-sombra: #0D076B;
-    --color-amarillo:#F1CD4B;
-}
+
+
 .reject-button {
   background-color: white;
 }
@@ -443,8 +451,4 @@ body{
     src: url('media/fonts/NeueMontreal-Regular.otf') format('otf');
 }
 
-:root {
-    --color-azul: #9EC9FF;
-    --bg-color: #F8F2EA;
-}
 

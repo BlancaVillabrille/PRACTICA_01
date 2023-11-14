@@ -36,6 +36,7 @@ p {
   position: absolute;
   border-style: solid;
   border-width: 1px;
+
 }
 
 .categories {
@@ -190,13 +191,12 @@ p {
 
 .findus {
   display: flex;
-  flex: 1;
   background-color: #f1cd4b;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 6.5em 2em 6.8em 6.5em;
   border-bottom: #0000;
   border-width: 1px;
+  width: 40%;
 }
 
 .findus p {
@@ -209,17 +209,23 @@ p {
 
 .google-maps {
   display: flex;
-  flex: 1;
   background-color: #f1cd4b;
   flex-direction: column;
   justify-content: center;
-  padding: 6.5em 6.5em 6.5em 3em;
   border-bottom: #000000;
   border-width: 1px;
-  padding-right: 6.5em;
+  width: 60%;
+  align-items: center;
 }
 
 .google-maps div {
+  height: 80%;
+  width: 80%;
+}
+
+.google-maps div iframe{
+  height: 100%;
+  width: 100%;
 }
 
 /* seccion newsletter */

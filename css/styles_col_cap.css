@@ -76,6 +76,7 @@ section > div{
     height: 40em;
     padding: 0 4em;
 }
+
 /* APARTADO 1 */
 #apartado1{
     background-color: var(--color-azul);
@@ -86,6 +87,7 @@ section > div{
     justify-content: center
 }
 
+
 #apartado1 > div:nth-child(2){
     display: flex;
     flex-direction: column;
@@ -95,6 +97,7 @@ section > div{
     gap: 3em;
 
 }
+
 
 /* APARTADO 2 */
 #apartado2{
