@@ -1,0 +1,820 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+</style>
+
+
+
+h2,
+h1,
+p {
+  color: black;
+  font-family: Neue;
+}
+/* seccion businessmen azul*/
+.businessmen {
+  background-color: #9ec9ff;
+  display: flex;
+  height: 100vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.workers-photos {
+  background-color: #9ec9ff;
+  display: flex;
+  flex: 1.7;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-left: 2em;
+}
+
+.workers-photos img {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.categories {
+  align-content: left;
+  background-color: #9ec9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  margin-right: 2em;
+  margin-left: 1.5em;
+}
+
+.categories button {
+  display: flex;
+  align-items: center;
+  height: 8em;
+  width: 35em;
+  border-width: 0.1em;
+  border-color: white;
+  margin-bottom: 1.5em;
+  color: white;
+  border-radius: 70px;
+}
+
+.categories button a {
+  font-size: 5em;
+  padding-left: 0.5em;
+}
+
+.categories button:hover {
+  background-color: white;
+  color: #9ec9ff;
+  border-color: white;
+}
+
+.categories button:active {
+  background-color: #9ec9ff;
+  color: white;
+}
+.categories button:active {
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: rgb(0, 0, 0);
+  --bs-btn-active-border-color: rgb(0, 0, 0);
+}
+
+/* seccion about rosada*/
+
+.about {
+  background-color: blueviolet;
+  display: flex;
+  height: 60vh;
+}
+
+.who {
+  display: flex;
+  flex: 1;
+  background-color: #f6a2f1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+  border-right-style: solid;
+  border-width: 1px;
+}
+
+/* seccion about div class who */
+
+.whomedia {
+  display: flex;
+  flex: 1;
+  background-color: #b37edb;
+  flex-direction: column;
+  justify-content: center;
+  border-right-style: solid;
+  border-width: 1px;
+}
+
+.whomedia img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.about p {
+  text-align: justify;
+}
+
+/* seccion compromise div class who */
+.about2 {
+  background-color: blueviolet;
+  display: flex;
+  height: 80vh;
+}
+
+.compromise {
+  display: flex;
+  flex: 1;
+  background-color: #b37edb;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em;
+  border-right-style: solid;
+  border-width: 1px;
+}
+.compromisemedia {
+  display: flex;
+  height: 60vh;
+  flex: 1;
+  background-color: #b37edb;
+  flex-direction: column;
+  justify-content: center;
+  border-right-style: solid;
+  border-width: 1px;
+}
+
+.compromisemedia img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.imagen_fondo {
+  background-image: url(../media/img/compromisoJully.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 1px;
+  background-size: cover;
+}
+
+
+/* seccion location amarilla */
+
+.location {
+  background-color: blueviolet;
+  display: flex;
+  height: 80vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.findus {
+  display: flex;
+  flex: 1;
+  background-color: #f1cd4b;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6.5em 2em 6.8em 6.5em;
+  border-bottom: #0000;
+  border-width: 1px;
+}
+
+.findus p {
+  margin-bottom: 0.2em;
+}
+
+.findus a {
+  color: black;
+}
+
+.google-maps {
+  display: flex;
+  flex: 1;
+  background-color: #f1cd4b;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5em 6.5em 6.5em 3em;
+  border-bottom: #000000;
+  border-width: 1px;
+  padding-right: 6.5em;
+}
+
+.google-maps div {
+}
+
+/* seccion newsletter */
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+.newsletter_wrapper {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.newsletter_wrapper h1 {
+  font-size: 2em;
+  color: #000000;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0em 28em 1.6em 28em;
+  font-size: 2.3em;
+}
+
+.newsletter_wrapper h1::before {
+  content: "";
+  position: absolute;
+  background: #dddddd;
+  width: 90px;
+  height: 1px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.newsletter_wrapper p {
+  color: #000000;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.boton-enviar {
+  position: relative;
+}
+
+.placeholder {
+  margin: 1.4em 0em 0.8em 0em;
+  opacity: 1;
+  width: 24em;
+  height: 2.9em;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+}
+
+.placeholder input {
+  border-style: hidden;
+  width: 100%;
+  margin: 0px 0px 0px 23px;
+  background-color: transparent;
+}
+
+.enviar button {
+  width: 7em;
+  height: 2.9em;
+  border-style: hidden;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.enviar button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.newsletter_wrapper form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 20px;
+  border-left: 1px solid #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ec9ff;
+}
+
+.newsletter h1 {
+  margin-bottom: 0.6em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* footer section */
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #f8f2ea;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 3em;
+}
+
+.information a,
+.aboutus a,
+.youneedhelp a {
+  font-size: 0.9em;
+}
+
+.information {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.aboutus {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.youneedhelp {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.redeslogo {
+  height: 20vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #f8f2ea;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.redes {
+  margin-right: 3em;
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.redes i {
+  display: flex;
+  width: 1.5em;
+  height: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.logofooter {
+  display: flex;
+  margin-left: 3em;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.logofooter img {
+  width: 7.5em;
+}
+
+/* copyright */
+
+.copyright {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f2ea;
+}
+
+.copyright p {
+  margin: 0.3em;
+  font-size: 0.8em;
+}
+
+/* Botones businessmen section */
+.btn-2,
+.btn-2 *,
+.btn-2 :after,
+.btn-2 :before,
+.btn-2:after,
+.btn-2:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-2:disabled {
+  cursor: default;
+}
+.btn-2:-moz-focusring {
+  outline: auto;
+}
+.btn-2 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-2 [hidden] {
+  display: none;
+}
+.btn-2 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-2 span {
+  mix-blend-mode: difference;
+}
+.btn-2:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-2:hover:before {
+  --progress: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive movil */
+
+/* @media only screen and (max-width: 1500px){} */
+
+@media only screen and (max-width: 900px){
+  /* businessmen section */
+
+  .businessmen{
+    height: 88vh;
+  }
+  .categories button {
+    height: 3em;
+    width: 14em;
+}
+
+  .workers-photos img {
+    width: 300px;
+    height: 450px;
+  }
+  
+  /* about */
+
+  .about{
+    height:44vh;
+  }
+  .about p {
+    text-align:start;
+  }
+
+  .about h1{
+    font-size: 2em;
+  }
+  
+  .compromise{
+    padding: 3em;
+  }
+
+  .who{
+    padding: 3em;
+  }
+
+
+/* location */
+
+   
+
+   .location{
+    flex-direction: column;
+   }
+
+   .google-maps{
+      padding: 0;
+   }
+
+   .google-maps div{
+    display: flex;
+    justify-content: center;
+   }
+
+   .findus {
+    justify-content: center;
+    padding:0em 0em 0em 3em;
+    flex-direction: column;
+    align-content: center;
+    height: 40vh;
+}
+
+  .findus h2 {
+    font-size: 2em;
+}
+
+.findus p {
+  margin-bottom: 0.1em;
+}
+  .categories button a {
+    font-size: 3.9em;
+    padding-left: 0.5em;
+}
+
+  .who {
+    padding: 3em;
+  }
+
+  .who h1 {
+    font-size: 2em;
+  }
+
+  .newsletter_wrapper {
+    height: 60vh
+}
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 600px){
+
+    .businessmen {
+        height: 95vh;
+        flex-direction: column;
+    }
+    
+    .categories{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0;
+      margin: 0em 1em 1.4em 1em;
+  
+    }
+    
+    .workers-photos {
+      margin: 0;
+      width:100%;
+      height:auto;
+    }
+    .workers-photos img {
+      display: block;
+  }
+    .categories button {
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      margin:0;
+      padding: 1.2em 2em 1.2em 2em;
+      margin-bottom: 0.7em;
+      height: 2.8em;
+      width: auto;
+    }
+    
+    
+    .categories button a {
+      padding:0em;
+      font-size: 2em;
+      text-align: center;
+    }
+      .newsletter_wrapper form {
+        width: 88%;
+      }
+    
+    /* about */
+    .about {
+      flex-direction: column;
+      background-color: blueviolet;
+      display: flex;
+      height: 80vh;
+      width: auto;
+    }
+    
+    .imagen_fondo{
+      height: 40vh;
+    }
+  
+  
+    .who h1 {
+      font-size: 1.6em;
+    }
+    .compromise{
+      padding: 2em;
+    }
+    
+    .compromise h1{
+      font-size:1.6em
+    }
+    
+    .about p{
+      font-size: 1em;
+    }
+  
+    .who{
+      display: flex;
+      flex: 1;
+      background-color: #f6a2f1;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8.5em;
+      border-bottom-style: solid;
+      border-width: 1px;
+      padding: 2em;
+    }
+  .findus{
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+  }
+    .google-maps{
+      padding: 0;
+    }
+  
+    .google-maps div{
+      padding: 0;
+    }
+  
+  
+  
+    .location{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .newsletter h1{
+      display: flex;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 0em 0em 0.6em 0em;
+    }
+    .newsletter_wrapper{
+      padding: 2em;
+    }
+    .newsletter p{
+      font-size: 0.9em;
+      margin: 0;
+      padding: 0em 1em 0.5em 1em;
+      text-align: center;
+  }
+    
+  
+    .placeholder{
+      width: 14em;
+      margin: 0.8em 0em 0.8em 0em;
+    }
+  
+     .newsletter h1{
+      white-space: inherit;
+     }
+  .newsletter p{
+    font-size: 0.7em;
+    padding: 0em 1em 0.9em 1em;
+  }
+     .footer{
+      flex-direction: column;
+      background-color: #f8f2ea;
+      align-content: left;
+      flex-wrap: nowrap;
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
+
+     }
+  
+     .information{
+      margin-left:2em;
+
+  
+     }
+  
+     .aboutus{
+      margin-left:2em;
+      justify-content: flex-start;
+      justify-content: center
+
+  
+     }
+     
+     .youneedhelp{
+      margin-left: 2em;
+      justify-content: flex-start;
+     }
+  
+     .redeslogo{
+      display: flex;
+      flex-direction: column;
+      height:0vh;
+     }
+  
+     .redes{
+      margin:0;
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+     align-items: center;
+}
+     }
+  .logofooter{
+    flex-wrap: nowrap;
+  margin:0;
+  align-items: center;
+  }
+  
+  
+  .copyright{
+   padding-top: 2.4em;
+  }
+    
+  
+}
+  
+
+
+  
+  
+  
+  
