@@ -887,6 +887,14 @@ h3{
     font-size: 4.5vw;
   }
 
+  .about h2{
+    font-size:1.2em;
+    margin-bottom: 0.3em;
+  }
+  .about p {
+    font-size: 0.8em;
+}
+
 
   .redeslogo{
     display: flex;
