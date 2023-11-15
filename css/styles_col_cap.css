@@ -1,0 +1,209 @@
+/* GENERAL */
+* {
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 6vw;
+}
+
+:root {
+    --color-azul: #9EC9FF;
+    --bg-color: #F8F2EA;
+    --black: #1A1A1F;
+    --color-rosa: #F6A2F1;
+    --color-morado: #B37EDB;
+    --color-azul-sombra: #0D076B;
+    --color-amarillo:#F1CD4B;
+}
+
+
+/* BOTON */
+.btn {
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.5VW;
+    /* text-transform: uppercase; */
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 0.2em 2em;
+    box-shadow: 0px 5px 0 0 var(--color-azul-sombra);
+    position: relative;
+    inset: 0;
+    cursor: pointer;
+    transform: rotateX(0), rotateY(0) rotateZ(0);
+    display: inline-block;
+    outline: 2px dashed transparent;
+    transition: all 200ms ease;
+}
+
+.btn:hover {
+    inset: 6px 0 5.5px 0;
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
+    color: #000000;
+    background-color: white;
+    border: 2px solid #000000;
+}
+
+
+
+/* IMAGENES */
+img{
+    height: 80%;
+}
+
+.img_div{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* TEXTO */
+.infojoyas{
+    font-size: 1.2vw;
+}
+
+
+
+
+
+/* MAIN */
+/* SECTION */
+#colec_cap > div{
+    height: 40vw;
+    padding: 0 4em;
+}
+
+/* APARTADO 1 */
+#apartado1{
+    background-color: var(--color-azul);
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center
+}
+
+
+#apartado1 > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30em;
+    gap: 3em;
+
+}
+
+
+/* APARTADO 2 */
+#apartado2{
+    background-color: var(--color-morado);
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+    justify-content: center
+}
+
+#apartado2 > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30em;
+    gap: 3em;
+
+}
+
+
+/* APARTADO 3 */
+#apartado3{
+    background-color: var(--color-rosa);
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center
+}
+
+#apartado3 > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30em;
+    gap: 3em;
+
+}
+
+
+/* APARTADO 4 */
+#apartado4{
+    background-color: var(--color-amarillo);
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+    justify-content: center
+}
+
+#apartado4 > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30em;
+    gap: 3em;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+/* 1135 */
+@media only screen and (max-width: 1135px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 1.7vw;
+    }
+}
+
+
+
+/* 800 */
+@media only screen and (max-width: 800px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 2vw;
+    }
+}
+
+
+
+/* 800 */
+@media only screen and (max-width: 550px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 1em;
+    }
+}
