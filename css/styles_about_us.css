@@ -63,11 +63,12 @@ p {
   margin-bottom: 1.5em;
   color: white;
   border-radius: 70px;
+  justify-content: center;
 }
 
 .categories button a {
   font-size: 5em;
-  padding-left: 0.5em;
+
 }
 
 .categories button:hover {
@@ -127,7 +128,7 @@ p {
 }
 
 .about p {
-  text-align: justify;
+  text-align: left;
 }
 
 /* seccion compromise div class who */
@@ -187,7 +188,8 @@ p {
 .location {
   background-color: blueviolet;
   display: flex;
-  height: 80vh;
+  flex-direction: row;
+  height: 50vw;
   border-style: solid;
   border-width: 1px;
 }
@@ -195,18 +197,22 @@ p {
 .findus {
   display: flex;
   background-color: #f1cd4b;
-  flex-direction: column;
   justify-content: flex-end;
   border-bottom: #0000;
   border-width: 1px;
   width: 40%;
+  align-items: flex-end;
+  padding-bottom: 4.5vw;
+}
+.findus > div{
+  width: 80%;
 }
 
-.findus p {
+.findus > div> p {
   margin-bottom: 0.2em;
 }
 
-.findus a {
+.findus> div > a {
   color: black;
 }
 
@@ -224,11 +230,14 @@ p {
 .google-maps div {
   height: 80%;
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .google-maps div iframe{
-  height: 100%;
-  width: 100%;
+  height: 40vw;
+  width: 40vw;
 }
 
 /* seccion newsletter */
@@ -526,29 +535,32 @@ textarea:focus {
 
 /* @media only screen and (max-width: 1500px){} */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1135px){
   /* businessmen section */
-
   .businessmen{
-    height: 88vh;
+    height: 88vw;
   }
+
   .categories button {
-    height: 3em;
-    width: 14em;
-}
+    height: 12vw;
+    width: 40vw;
+    justify-content: center;
+  }
+
+  .workers-photos {
+    width: 45%;
+    flex: none;
+  }
 
   .workers-photos img {
-    width: 300px;
-    height: 450px;
+    width: 40vw;
+    height: 55vw;
   }
   
-  /* about */
 
+  /* about */
   .about{
     height:44vh;
-  }
-  .about p {
-    text-align:start;
   }
 
   .about h1{
@@ -557,6 +569,7 @@ textarea:focus {
   
   .compromise{
     padding: 3em;
+    font-size: 1em;
   }
 
   .who{
@@ -565,41 +578,10 @@ textarea:focus {
 
 
 /* location */
-
-   
-
-   .location{
-    flex-direction: column;
-   }
-
-   .google-maps{
-      padding: 0;
-   }
-
-   .google-maps div{
-    display: flex;
-    justify-content: center;
-   }
-
-   .findus {
-    justify-content: center;
-    padding:0em 0em 0em 3em;
-    flex-direction: column;
-    align-content: center;
-    height: 40vh;
-}
-
-  .findus h2 {
-    font-size: 2em;
-}
-
-.findus p {
-  margin-bottom: 0.1em;
-}
   .categories button a {
-    font-size: 3.9em;
-    padding-left: 0.5em;
-}
+    font-size: 5vw;
+    padding-left: 0;
+  }
 
   .who {
     padding: 3em;
@@ -611,203 +593,248 @@ textarea:focus {
 
   .newsletter_wrapper {
     height: 60vh
-}
-}
-
-
-
-
-
-
-  @media only screen and (max-width: 600px){
-
-    .businessmen {
-        height: 95vh;
-        flex-direction: column;
-    }
-    
-    .categories{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 0;
-      margin: 0em 1em 1.4em 1em;
-  
-    }
-    
-    .workers-photos {
-      margin: 0;
-      width:100%;
-      height:auto;
-    }
-    .workers-photos img {
-      display: block;
   }
-    .categories button {
-      justify-content: center;
-      align-items: center;
-      display: inline-flex;
-      margin:0;
-      padding: 1.2em 2em 1.2em 2em;
-      margin-bottom: 0.7em;
-      height: 2.8em;
-      width: auto;
-    }
-    
-    
-    .categories button a {
-      padding:0em;
-      font-size: 2em;
-      text-align: center;
-    }
-      .newsletter_wrapper form {
-        width: 88%;
-      }
-    
-    /* about */
-    .about {
-      flex-direction: column;
-      background-color: blueviolet;
-      display: flex;
-      height: 80vh;
-      width: auto;
-    }
-    
-    .imagen_fondo{
-      height: 40vh;
-    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px){
+
+
   
-  
-    .who h1 {
-      font-size: 1.6em;
-    }
-    .compromise{
-      padding: 2em;
-    }
-    
-    .compromise h1{
-      font-size:1.6em
-    }
-    
-    .about p{
-      font-size: 1em;
-    }
-  
-    .who{
-      display: flex;
-      flex: 1;
-      background-color: #f6a2f1;
-      flex-direction: column;
-      justify-content: center;
-      padding: 8.5em;
-      border-bottom-style: solid;
-      border-width: 1px;
-      padding: 2em;
-    }
-  .findus{
-    display: flex;
+
+  /* about */
+  .about {
     flex-direction: column;
-    padding:2em;
+    background-color: blueviolet;
+    display: flex;
+    height: 80vh;
+    width: auto;
   }
-    .google-maps{
-      padding: 0;
-    }
   
-    .google-maps div{
-      padding: 0;
-    }
-  
-  
-  
-    .location{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .newsletter h1{
-      display: flex;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin: 0em 0em 0.6em 0em;
-    }
-    .newsletter_wrapper{
-      padding: 2em;
-    }
-    .newsletter p{
-      font-size: 0.9em;
-      margin: 0;
-      padding: 0em 1em 0.5em 1em;
-      text-align: center;
+  .imagen_fondo{
+    height: 40vh;
   }
-    
+
+  .who h1 {
+    font-size: 1.6em;
+  }
+  .compromise{
+    padding: 2em;
+  }
   
-    .placeholder{
-      width: 14em;
-      margin: 0.8em 0em 0.8em 0em;
-    }
+  .compromise h1{
+    font-size:1.6em
+  }
   
-     .newsletter h1{
-      white-space: inherit;
-     }
+  .about p{
+    font-size: 1em;
+  }
+
+  .who{
+    display: flex;
+    flex: 1;
+    background-color: #f6a2f1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8.5em;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 2em;
+  }
+
+
+  /* location */
+  .location {
+    flex-direction: column;
+    height: 80vw;
+  }
+  
+  .findus {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 3em;
+  }
+  
+  .google-maps {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .google-maps div {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .google-maps div iframe{
+    height: 40vw;
+    width: 70vw;
+  }
+
+
+
+/* FOOTER */
+/* newletter */
+  .newsletter h1{
+    display: flex;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0em 0em 0.6em 0em;
+  }
+
+  .newsletter_wrapper{
+    padding: 2em;
+  }
+
+  .newsletter_wrapper form {
+  width: 88%;
+  }
+
+  .newsletter p{
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0em 1em 0.5em 1em;
+    text-align: center;
+  }
+  
+  .placeholder{
+    width: 14em;
+    margin: 0.8em 0em 0.8em 0em;
+  }
+
+  .newsletter h1{
+    white-space: inherit;
+  }
+
   .newsletter p{
     font-size: 0.7em;
     padding: 0em 1em 0.9em 1em;
   }
-     .footer{
-      flex-direction: column;
-      background-color: #f8f2ea;
-      align-content: left;
-      flex-wrap: nowrap;
-      height: 70vh;
-      padding-top: 2.5em;
-      padding-bottom: 2em;
-     }
-  
-     .information{
-      margin-left:2em;
 
-  
-     }
-  
-     .aboutus{
-      margin-left:2em;
-      justify-content: flex-start;
-      justify-content: center
 
-  
-     }
-     
-     .youneedhelp{
-      margin-left: 2em;
-      justify-content: flex-start;
-     }
-  
-     .redeslogo{
-      display: flex;
-      flex-direction: column;
-      height:30vh;
-     }
-  
-     .redes{
-      margin:0;
-     }
-  .logofooter{
+
+/* TEXTO FOOTER */
+  .footer{
+    flex-direction: column;
+    background-color: #f8f2ea;
+    align-content: left;
     flex-wrap: nowrap;
-  margin:0;
-  align-items: center;
+    height: 70vh;
+    padding-top: 2.5em;
+    padding-bottom: 2em;
   }
-  
-  
-  .copyright{
-   padding-top: 2.4em;
+
+  .information{
+    margin-left:2em;
+  }
+
+  .aboutus{
+    margin-left:2em;
+    justify-content: flex-start;
+    justify-content: center
   }
     
-  
+  .youneedhelp{
+    margin-left: 2em;
+    justify-content: flex-start;
+  }
+
+  .redeslogo{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+  }
+
+  .redes{
+    margin:0;
+  }
+
+  .logofooter{
+    flex-wrap: nowrap;
+    margin:0;
+    align-items: center;
+  }
+
+  .copyright{
+    padding-top: 2.4em;
+  }
+
 }
-  
 
 
-  
-  
-  
-  
+
+@media only screen and (max-width: 600px){
+  /* integrantes */
+  .businessmen {
+    height: 122VW;
+    flex-direction: column;
+  }
+
+  .categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0;
+    margin: 2em 1em 1.4em 1em;
+  }
+
+  .workers-photos {
+    margin: 0;
+    width:100%;
+    height:60vw;
+    justify-content: center;
+    flex: none;
+  }
+
+  .workers-photos img {
+    display: block;
+  }
+
+  .categories button {
+    height: 12vw;
+    width: 40vw;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .categories button a {
+    font-size: 4.5vw;
+  }
+
+
+
+  /* location */
+  .location{
+    height: 100vw;
+  }
+
+  .findus {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2em;
+  }
+
+  .findus > div{
+    width: 100%;
+  }
+
+  .findus > div a, p{
+    font-size: 0.7em;
+  }
+
+  .google-maps div iframe {
+    height: 100%;
+  }
+}
+
+
+
+
+
