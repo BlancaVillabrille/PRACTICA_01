@@ -110,8 +110,11 @@ h1{
   justify-content: center;
   padding: 6.5em;
   border-right-style: solid;
+  border-left-style: solid;
   border-width: 2px;
 }
+
+
 
 /* seccion about div class who */
 
@@ -211,7 +214,7 @@ h1{
   align-items: flex-end;
   padding-bottom: 4.5vw;
   flex-direction: column;
-  padding:3em;
+  padding: 3em 3em;
   align-items: flex-start
   }
     
@@ -268,7 +271,8 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style:solid;
   border-width: 2px;
 }
 
@@ -277,6 +281,7 @@ textarea:focus {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 0.3em;
+  font-size: 3.3em;
 }
 
 .newsletter_wrapper h1::before {
@@ -292,7 +297,7 @@ textarea:focus {
 
 .newsletter_wrapper p {
   color: #000000;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.2em;
 }
 
@@ -371,6 +376,7 @@ textarea:focus {
 --bs-accordion-btn-focus-border-color: none; 
 --bs-accordion-btn-focus-box-shadow:none;
 
+
 }
 .accordion-button:not(.collapsed) {
   background-color: #F6A2F1;
@@ -389,6 +395,10 @@ textarea:focus {
 
 .accordion-item {
   border-radius:0;
+}
+
+.accordion a{
+  font-size:1.2em;
 }
 
 h3{
@@ -772,9 +782,7 @@ h3{
     white-space: inherit;
   }
 
-  .newsletter p{
-    font-size: 0.7em;
-  }
+
 
   .placeholder input {
     font-size: 0.8em;
@@ -878,6 +886,10 @@ h3{
     padding-bottom: 2em;
     height: 25vh;
    }
+
+   .imagen_fondo {
+    height: 20vh;
+}
    
   /* location */
   .location{
@@ -904,6 +916,10 @@ h3{
 
   .newsletter_wrapper {
     height: 45vh;
+}
+
+.newsletter_wrapper h2 {
+  font-size: 1.4em;
 }
 
 
