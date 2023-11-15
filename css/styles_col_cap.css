@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     margin: 0;
     font-family: 'Sora', sans-serif;
@@ -65,15 +66,19 @@ img{
 
 
 
+/* TEXTO */
+.infojoyas{
+    font-size: 1.2vw;
+}
+
+
+
+
 
 /* MAIN */
 /* SECTION */
-section > div{
-    margin-top: 2em;
-}
-
 #colec_cap > div{
-    height: 40em;
+    height: 40vw;
     padding: 0 4em;
 }
 
@@ -102,7 +107,8 @@ section > div{
 /* APARTADO 2 */
 #apartado2{
     background-color: var(--color-morado);
-    border: 2px solid var(--black);
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -145,7 +151,9 @@ section > div{
 /* APARTADO 4 */
 #apartado4{
     background-color: var(--color-amarillo);
-    border: 2px solid var(--black);
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -169,6 +177,33 @@ section > div{
 
 
 /* RESPONSIVE */
-@media screen {
-    
+/* 1135 */
+@media only screen and (max-width: 1135px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 1.7vw;
+    }
+}
+
+
+
+/* 800 */
+@media only screen and (max-width: 800px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 2vw;
+    }
+}
+
+
+
+/* 800 */
+@media only screen and (max-width: 550px) {
+        
+    /* TEXTO */
+    .infojoyas{
+        font-size: 1em;
+    }
 }
