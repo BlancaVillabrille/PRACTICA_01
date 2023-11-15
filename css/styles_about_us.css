@@ -811,7 +811,11 @@ textarea:focus {
   }
 
 
-
+  .redeslogo{
+    display: flex;
+    flex-direction: column;
+   }
+   
   /* location */
   .location{
     height: 100vw;
@@ -836,7 +840,7 @@ textarea:focus {
   }
 
 
-  /* acordeon */
+  
 }
 
 

@@ -784,7 +784,6 @@ textarea:focus {
      .redeslogo{
       display: flex;
       flex-direction: column;
-      height:0vh;
      }
   
      .redes{
