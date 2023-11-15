@@ -759,7 +759,7 @@ h3{
   }
 
   .newsletter_wrapper{
-    padding: 2em;
+    padding: 1em;
   }
 
   .newsletter_wrapper form {
@@ -781,6 +781,15 @@ h3{
   .newsletter h1{
     white-space: inherit;
   }
+
+  .placeholder {
+    height: 2.5em;
+  }
+  .enviar button {
+    width: 7em;
+    height: 2.5em;
+  
+}
 
 
 
