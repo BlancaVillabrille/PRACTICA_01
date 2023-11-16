@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 h3,
@@ -13,23 +13,20 @@ p {
   margin: 0;
 }
 
-h1{
-    font-size: 6vw;
+h1 {
+  font-size: 6vw;
 }
-
 
 :root {
-    --color-azul: #9EC9FF;
-    --bg-color: #F8F2EA;
-    --black: #1A1A1F;
-    --color-rosa: #F6A2F1;
-    --color-morado: #B37EDB;
-    --color-azul-sombra: #0D076B;
-    --color-amarillo:#F1CD4B;
-    --color-gris-hover: rgb(134, 134, 134);
+  --color-azul: #9ec9ff;
+  --bg-color: #f8f2ea;
+  --black: #1a1a1f;
+  --color-rosa: #f6a2f1;
+  --color-morado: #b37edb;
+  --color-azul-sombra: #0d076b;
+  --color-amarillo: #f1cd4b;
+  --color-gris-hover: rgb(134, 134, 134);
 }
-
-
 
 /* BOTON ARRIBA */
 #button-top {
@@ -55,8 +52,6 @@ h1{
 #button-top:hover {
   background-color: #555;
 }
-
-
 
 /* NAV */
 .bg-body-tertiary {
@@ -85,8 +80,10 @@ nav {
   z-index: 30;
 }
 
-.colection-capsule, .bestseller, .categories{
- font-size:1em;
+.colection-capsule,
+.bestseller,
+.categories {
+  font-size: 1em;
 }
 
 #menu > div:nth-child(1) {
@@ -125,12 +122,12 @@ nav {
   margin-right: 2em;
 }
 
-.hide-texto{
+.hide-texto {
   display: none;
   font-size: 1em;
 }
 
-.texto_coleccion{
+.texto_coleccion {
   padding-top: 4em;
 }
 
@@ -140,10 +137,17 @@ nav {
   --bs-dropdown-border-radius: none;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #f8f9fa;
+}
 
+.dropdown-item {
+  background-color: #f8f9fa;
+}
 
-
-
+.dropdown-item:hover {
+  background-color: #dadada;
+}
 
 /* seccion businessmen azul*/
 .businessmen {
@@ -172,7 +176,6 @@ nav {
   position: absolute;
   border-style: solid;
   border-width: 2px;
-
 }
 
 .categories {
@@ -201,7 +204,6 @@ nav {
 
 .categories button a {
   font-size: 5em;
-
 }
 
 .categories button:hover {
@@ -239,8 +241,6 @@ nav {
   border-left-style: solid;
   border-width: 2px;
 }
-
-
 
 /* seccion about div class who */
 
@@ -319,7 +319,6 @@ nav {
   background-size: cover;
 }
 
-
 /* seccion location amarilla */
 .location {
   background-color: blueviolet;
@@ -341,19 +340,18 @@ nav {
   padding-bottom: 4.5vw;
   flex-direction: column;
   padding: 3em 3em;
-  align-items: flex-start
-  }
-    
+  align-items: flex-start;
+}
 
-.findus > div{
+.findus > div {
   width: 80%;
 }
 
-.findus > div> p {
+.findus > div > p {
   margin-bottom: 0.2em;
 }
 
-.findus> div > a {
+.findus > div > a {
   color: black;
 }
 
@@ -376,12 +374,10 @@ nav {
   justify-content: center;
 }
 
-.google-maps div iframe{
+.google-maps div iframe {
   height: 40vw;
   width: 40vw;
 }
-
-
 
 /* seccion newsletter */
 button:focus,
@@ -398,7 +394,7 @@ textarea:focus {
   justify-content: center;
   text-align: center;
   border-right-style: solid;
-  border-left-style:solid;
+  border-left-style: solid;
   border-width: 2px;
 }
 
@@ -489,74 +485,63 @@ textarea:focus {
   white-space: nowrap;
 }
 
-
 /* acordeon */
 
-.accordion{
---bs-accordion-btn-focus-border-color:#F6A2F1;
---bs-accordion-border-color: black;
---bs-accordion-active-bg:#F8F2EA;
---bs-accordion-border-radius:none;
---bs-accordion-inner-border-radius:none;
---bs-accordion-btn-focus-background-color:#F6A2F1;
---bs-accordion-btn-focus-border-color: none; 
---bs-accordion-btn-focus-box-shadow:none;
-background-color: #F8F2EA;
-
+.accordion {
+  --bs-accordion-btn-focus-border-color: #f6a2f1;
+  --bs-accordion-border-color: black;
+  --bs-accordion-active-bg: #f8f2ea;
+  --bs-accordion-border-radius: none;
+  --bs-accordion-inner-border-radius: none;
+  --bs-accordion-btn-focus-background-color: #f6a2f1;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  background-color: #f8f2ea;
 }
 .accordion-button:not(.collapsed) {
   border-color: #000000;
   border-bottom-style: solid;
-
 }
 
-.accordion-body{
+.accordion-body {
   padding: 0;
 }
 
 .accordion-body div {
-  
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 3em;
 }
 
 .accordion-body div:active {
-background-color:#f8ead7;
-color: rgb(0, 0, 0);
+  background-color: #f8ead7;
+  color: rgb(0, 0, 0);
 }
 
 .accordion-body div:hover {
   font-weight: bold;
-  }
-
+}
 
 .accordion-item:first-of-type .accordion-button {
   border-radius: 0;
 }
 
-.accordion-button{
+.accordion-button {
   border-radius: 0;
-  padding:1.5em 2.4em 1.5em 3em;
-  
+  padding: 1.5em 2.4em 1.5em 3em;
 }
 
 .accordion-item {
-  border-radius:0;
+  border-radius: 0;
 }
 
-.accordion a{
-  font-size:1.2em;
+.accordion a {
+  font-size: 1.2em;
 }
 
-h3{
+h3 {
   margin: 0;
 }
-
-
-
-
-
 
 /* footer section */
 
@@ -732,22 +717,11 @@ h3{
   --progress: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* responsive movil */
 
 /* @media only screen and (max-width: 1500px){} */
 
-@media only screen and (max-width: 1135px){
-
+@media only screen and (max-width: 1135px) {
   /* NAVBAR */
   #menu {
     flex-direction: column;
@@ -790,7 +764,7 @@ h3{
     width: 100%;
   }
 
-  #menu > div:nth-child(2) > div:nth-child(2) > i{  
+  #menu > div:nth-child(2) > div:nth-child(2) > i {
     padding: 1em 2em;
     cursor: pointer;
   }
@@ -811,13 +785,13 @@ h3{
     width: 100%;
   }
 
-  .hide-texto{
+  .hide-texto {
     display: block;
     text-align: center;
-    margin: 0.5em
+    margin: 0.5em;
   }
 
-  .iconos-desplegables{
+  .iconos-desplegables {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -825,12 +799,8 @@ h3{
     cursor: pointer;
   }
 
-
-
-
-
   /* businessmen section */
-  .businessmen{
+  .businessmen {
     height: 80vw;
   }
 
@@ -849,28 +819,26 @@ h3{
     width: 40vw;
     height: 50vw;
   }
-  
 
   /* about */
-  .about{
-    height:44vh;
+  .about {
+    height: 44vh;
   }
 
-  .about h1{
+  .about h1 {
     font-size: 2em;
   }
-  
-  .compromise{
+
+  .compromise {
     padding: 3em;
     font-size: 1em;
   }
 
-  .who{
+  .who {
     padding: 3em;
   }
 
-
-/* location */
+  /* location */
   .categories button a {
     font-size: 5vw;
     padding-left: 0;
@@ -885,17 +853,11 @@ h3{
   }
 
   .newsletter_wrapper {
-    height: 85vh
+    height: 85vh;
   }
-
 }
 
-
-
-
-
-
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px) {
   #button-top {
     font-size: 3vw;
   }
@@ -908,27 +870,27 @@ h3{
     height: 80vh;
     width: auto;
   }
-  
-  .imagen_fondo{
+
+  .imagen_fondo {
     height: 60vh;
   }
 
   .who h1 {
     font-size: 1.6em;
   }
-  .compromise{
+  .compromise {
     padding: 2em;
   }
-  
-  .compromise h1{
-    font-size:1.6em
+
+  .compromise h1 {
+    font-size: 1.6em;
   }
-  
-  .about p{
+
+  .about p {
     font-size: 1em;
   }
 
-  .who{
+  .who {
     display: flex;
     flex: 1;
     background-color: #f6a2f1;
@@ -940,25 +902,24 @@ h3{
     padding: 2em;
   }
 
-
   /* location */
   .location {
     flex-direction: column;
     height: 80vw;
   }
-  
+
   .findus {
     width: 100%;
     justify-content: flex-start;
     padding: 3em;
   }
-  
+
   .google-maps {
     height: 100%;
     width: 100%;
     justify-content: flex-start;
   }
-  
+
   .google-maps div {
     height: 80%;
     width: 80%;
@@ -966,64 +927,59 @@ h3{
     align-items: center;
     justify-content: center;
   }
-  
-  .google-maps div iframe{
+
+  .google-maps div iframe {
     height: 40vw;
     width: 70vw;
   }
 
-
-
-/* FOOTER */
-/* newletter */
-  .newsletter h1{
+  /* FOOTER */
+  /* newletter */
+  .newsletter h1 {
     display: flex;
     font-size: 1.3em;
     font-weight: bold;
     margin: 0em 0em 0.6em 0em;
   }
 
-  .newsletter_wrapper{
+  .newsletter_wrapper {
     padding: 1em;
   }
 
   .newsletter_wrapper form {
-  width: 88%;
+    width: 88%;
   }
 
-  .newsletter p{
+  .newsletter p {
     font-size: 1.1em;
     margin: 0;
     padding: 0em 1em 0.5em 1em;
     text-align: center;
   }
-  
-  .placeholder{
+
+  .placeholder {
     width: 14em;
     margin: 0.8em 0em 0.8em 0em;
   }
 
-  .newsletter h1{
+  .newsletter h1 {
     white-space: inherit;
   }
 
   .placeholder {
     height: 2.8em;
-}
+  }
   .enviar button {
     width: 7em;
     height: 2.7em;
-  
-}
+  }
 
   .placeholder input {
     font-size: 0.9em;
-   }
+  }
 
-
-
-/* TEXTO FOOTER */
-  .footer{
+  /* TEXTO FOOTER */
+  .footer {
     flex-direction: column;
     background-color: #f8f2ea;
     align-content: left;
@@ -1032,68 +988,68 @@ h3{
     padding-top: 2.5em;
   }
 
-  .information{
-    margin-left:2em;
+  .information {
+    margin-left: 2em;
   }
 
-  .aboutus{
-    margin-left:2em;
+  .aboutus {
+    margin-left: 2em;
     justify-content: flex-start;
-    justify-content: center
+    justify-content: center;
   }
-    
-  .youneedhelp{
+
+  .youneedhelp {
     margin-left: 2em;
     justify-content: flex-start;
   }
 
-  .redes{
+  .redes {
     margin-right: 2.5em;
   }
 
-  .redeslogo{
+  .redeslogo {
     display: flex;
     flex-direction: row;
-    height:30vh;
+    height: 30vh;
     padding-top: 3em;
   }
 
-
-  .logofooter{
+  .logofooter {
     flex-wrap: nowrap;
     margin: 0em;
     align-items: center;
     display: flex;
   }
 
-  .copyright{
+  .copyright {
     padding: 0em 1em 0em 1em;
   }
 
-  .copyright p{
-    font-size:0.7em;
+  .copyright p {
+    font-size: 0.7em;
     text-align: center;
     margin-bottom: 1.4em;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+  }
 
-
-  
-
-
-
-@media only screen and (max-width: 600px){
+  .dropdown-item {
+    background-color: #f8f9fa;
+  }
   #button-top {
     font-size: 5vw;
   }
   /* integrantes */
   .businessmen {
-    height: 122VW;
+    height: 122vw;
     flex-direction: column;
   }
 
-  .categories{
+  .categories {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1102,8 +1058,8 @@ h3{
 
   .workers-photos {
     margin: 0;
-    width:100%;
-    height:70vw;
+    width: 100%;
+    height: 70vw;
     justify-content: center;
     flex: none;
   }
@@ -1123,31 +1079,30 @@ h3{
     font-size: 4.5vw;
   }
 
-  .about h2{
-    font-size:1.4em;
+  .about h2 {
+    font-size: 1.4em;
     margin-bottom: 0.5em;
   }
   .about p {
     font-size: 0.8em;
-}
+  }
 
-
-  .redeslogo{
+  .redeslogo {
     display: flex;
     flex-direction: column;
     padding-top: 3em;
     padding-bottom: 2em;
     height: 35vh;
-   }
+  }
 
-   .imagen_fondo {
+  .imagen_fondo {
     height: 38vh;
-}
-   
+  }
+
   /* location */
   .location {
     height: 70vh;
-}
+  }
 
   .findus {
     width: 100%;
@@ -1155,11 +1110,12 @@ h3{
     padding: 2em;
   }
 
-  .findus > div{
+  .findus > div {
     width: 100%;
   }
 
-  .findus a, p{
+  .findus a,
+  p {
     font-size: 0.8em;
   }
 
@@ -1169,82 +1125,71 @@ h3{
 
   .newsletter_wrapper {
     height: 50vh;
+  }
+
+  .newsletter_wrapper h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  .newsletter_wrapper h2 {
+    margin-bottom: 0.5em;
+  }
+
+  /* accordion */
+
+  .accordion-button {
+    padding-left: 2em;
+    padding-right: 1.2em;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-radius: 0s;
+  }
+
+  .accordion-button {
+    padding: 1em 1.2em 1em 2em;
+  }
+
+  .accordion-item {
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .accordion-body {
+    padding: 0;
+  }
+
+  .accordion-body a {
+    font-size: 0.9em;
+  }
+
+  .accordion-body div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+  }
+
+  .redes {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .redes i {
+    width: 1.5em;
+  }
+
+  .copyright {
+    padding: 0em 1em 2.4em 1em;
+  }
+  /* copyright */
+  .copyright p {
+    text-align: center;
+    font-size: 0.7em;
+  }
 }
-
-.newsletter_wrapper h2 {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
-.newsletter_wrapper h2 {
-  margin-bottom: 0.5em;
-}
-
-
-/* accordion */
-
-.accordion-button{
-  padding-left:2em;
-  padding-right: 1.2em;
-}
-
-.accordion-item:first-of-type .accordion-button {
-  border-radius: 0s;
-}
-
-.accordion-button{
-  padding: 1em 1.2em 1em 2em;
-}
-
-
-.accordion-item{
-  border-style: solid;
-  border-width: 2px;
-}
-
-h3{
-  margin: 0;
-  font-size: 1em;
-}
-
-.accordion-body {
-  padding: 0;
-}
-
-.accordion-body a{
-  font-size: 0.9em;
-}
-
-.accordion-body div {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-}
-
-.redes {
-  margin: 0;
-  justify-content: center;
-}
-
-.redes i{
-  width: 1.5em;
-}
-
-.copyright{
-  padding: 0em 1em 2.4em 1em;
-}
-/* copyright */
-.copyright p{
-text-align: center;
-font-size: 0.7em;
-}
-
-
-}
-  
-
-
-
-
-
-
