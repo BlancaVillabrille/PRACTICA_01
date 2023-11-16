@@ -1,14 +1,62 @@
+$(document).ready(function () {
 
 
-// PRUEBA PARA HACER IMAGENES ABOUT US
-// $(document).ready(function () {
+  // BOTON SCROLL TOP 
+  var mybutton = document.getElementById("button-top");
+
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 , document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  $("#button-top").click(function (){
+    
+    // var heightPage = $("header").height();
+    // $(window).scrollTop(0 + heightPage);
+
+    $(window).scrollTop(0);
+  });
 
 
-//   // cambiarimagen de perfiles
-//     $("#perfilmarta").hover(function(){
-//     $("#imginicial").attr("src", "media/img/Collar 1.png");
-//     }, function(){
-//         $("#imginicial").attr("src", "media/img/Pulsera 4.png");
-//     });
 
-// })
+
+
+
+  // TOGGLE MENU
+  function openMenu(){
+    document.getElementById("visibility").style.visibility = "visible";
+    document.getElementById("menu").style.height = "auto";
+  }
+
+  function closeMenu(){
+    document.getElementById("menu").style.height = "4em";
+    document.getElementById("visibility").style.visibility = "hidden";
+  }
+
+  $(".fa-bars").on("click", function() {
+    if ($("#visibility").css("visibility") === "hidden"){
+      openMenu();
+    }
+    else{
+        closeMenu();
+    };
+    
+  });
+
+
+
+
+
+  // HOVER DEL MENU
+  $(".iconos-desplegables").mouseover(function () {
+    $(this).css("color", "var(--color-gris-hover)");
+  });
+  $(".iconos-desplegables").mouseout(function () {
+      $(this).css("color", "black");
+  });
+})

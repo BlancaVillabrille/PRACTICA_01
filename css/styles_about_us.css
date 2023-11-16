@@ -18,6 +18,133 @@ h1{
 }
 
 
+:root {
+    --color-azul: #9EC9FF;
+    --bg-color: #F8F2EA;
+    --black: #1A1A1F;
+    --color-rosa: #F6A2F1;
+    --color-morado: #B37EDB;
+    --color-azul-sombra: #0D076B;
+    --color-amarillo:#F1CD4B;
+    --color-gris-hover: rgb(134, 134, 134);
+}
+
+
+
+/* BOTON ARRIBA */
+#button-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  /* text-transform: uppercase; */
+  border: 2px solid #000000;
+  border-radius: 30px;
+  padding: 0.2em 2em;
+  box-shadow: 0px 5px 0 0 var(--color-azul-sombra);
+  cursor: pointer;
+  transform: rotateX(0), rotateY(0) rotateZ(0);
+  outline: 2px dashed transparent;
+  transition: all 200ms ease;
+}
+#button-top:hover {
+  background-color: #555;
+}
+
+
+
+/* NAV */
+.bg-body-tertiary {
+  background-color: white;
+}
+#menu {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  height: 4em;
+  border: 1em;
+  border-color: black;
+  z-index: 1;
+  background-color: white;
+}
+
+nav {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+.colection-capsule, .bestseller, .categories{
+ font-size:1em;
+}
+
+#menu > div:nth-child(1) {
+  padding-left: 2em;
+}
+
+#menu > div:nth-child(1) > i {
+  display: none;
+}
+
+#logo {
+  width: 3em;
+}
+
+/* BOTONES MENU  DESPLEGABLE */
+#menu > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+/* BOTONES MENU CENTRAL */
+#menu > div > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35em;
+}
+
+/* BOTONES MENU DCHA */
+#menu > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10em;
+  justify-content: space-evenly;
+  margin-right: 2em;
+}
+
+.hide-texto{
+  display: none;
+  font-size: 1em;
+}
+
+.texto_coleccion{
+  padding-top: 4em;
+}
+
+.dropdown-menu {
+  --bs-dropdown-border-color: none;
+  --bs-dropdown-bg: white;
+  --bs-dropdown-border-radius: none;
+}
+
+
+
+
+
+
 /* seccion businessmen azul*/
 .businessmen {
   background-color: #9ec9ff;
@@ -620,6 +747,88 @@ h3{
 /* @media only screen and (max-width: 1500px){} */
 
 @media only screen and (max-width: 1135px){
+
+  /* NAVBAR */
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2em;
+    width: 100%;
+  }
+
+  #menu > div:nth-child(1) > i {
+    display: flex;
+    cursor: pointer;
+    padding-right: 3em;
+  }
+
+  #menu > div:nth-child(2) {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 1em;
+  }
+
+  #menu > div > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #menu > div:nth-child(2) > div:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #menu > div:nth-child(2) > div:nth-child(2) > i{  
+    padding: 1em 2em;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    padding-left: 2em;
+  }
+  .nav-link {
+    width: 100%;
+  }
+
+  /* DROPDOWN */
+  .dropdown-menu {
+    border-radius: 0px;
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+
+  .hide-texto{
+    display: block;
+    text-align: center;
+    margin: 0.5em
+  }
+
+  .iconos-desplegables{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2em;
+    cursor: pointer;
+  }
+
+
+
+
+
   /* businessmen section */
   .businessmen{
     height: 80vw;
@@ -687,6 +896,9 @@ h3{
 
 
 @media only screen and (max-width: 850px){
+  #button-top {
+    font-size: 3vw;
+  }
 
   /* about */
   .about {
@@ -787,7 +999,7 @@ h3{
   }
   
   .placeholder{
-    width: 19em;
+    width: 14em;
     margin: 0.8em 0em 0.8em 0em;
   }
 
@@ -872,6 +1084,9 @@ h3{
 
 
 @media only screen and (max-width: 600px){
+  #button-top {
+    font-size: 5vw;
+  }
   /* integrantes */
   .businessmen {
     height: 122VW;

@@ -162,6 +162,9 @@ header {
   overflow: hidden;
 }
 
+
+
+
 /* NAV */
 .bg-body-tertiary {
   background-color: white;
@@ -229,6 +232,15 @@ nav {
   margin-right: 2em;
 }
 
+.hide-texto{
+  display: none;
+}
+
+
+
+
+
+
 /* CARRUSEL */
 .carousel {
   top: 4em;
@@ -251,6 +263,7 @@ nav {
   margin-left: 5em;
   justify-content: space-between;
   align-items: center;
+  font-family: "Sora", sans-serif;
 }
 
 .texto_coleccion > div > h1 {
@@ -842,10 +855,6 @@ h3{
 /* responsive movil */
 
 @media only screen and (max-width: 576px) {
-  .texto_coleccion {
-    position: sticky;
-  }
-
   .cookie-info {
     margin: 0px 15px 10px 15px;
   }
@@ -885,6 +894,20 @@ h3{
 /* MAIN */
 
 @media only screen and (max-width: 1135px) {
+  .hide-texto{
+    display: block;
+    text-align: center;
+    margin: 0.5em
+  }
+
+  .iconos-desplegables{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2em;
+    cursor: pointer;
+  }
+
   #button-top:hover {
     transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
     box-shadow: none;
@@ -962,7 +985,7 @@ h3{
 
   .texto_coleccion {
     width: 20em;
-    top: 42vw;
+    top: 35vw;
     width: 24em;
   }
 
@@ -976,6 +999,23 @@ h3{
 }
 
 @media only screen and (max-width: 800px) {
+
+  .carousel {
+    height: 65vw;
+}
+    /* COLEC CAP */
+  .texto_coleccion {
+    top: 68vw;
+  }
+
+  .btn {
+    font-size: 4vw;
+  }
+
+  #minimenu{
+    margin-top: 11em;
+  }
+
   #MasVendidos > div > div > div:nth-child(2) {
     padding: 2em;
   }
@@ -1014,7 +1054,7 @@ h3{
   }
 
   .placeholder{
-    width: 19em;
+    width: 14em;
     margin: 0.8em 0em 0.8em 0em;
   }
 
@@ -1094,6 +1134,24 @@ h3{
 }
 
 @media only screen and (max-width: 580px) {
+  .texto_coleccion {
+    top: 79vw;
+    margin-left: 2em;
+    width: 77vw;
+  }
+  .carousel {
+    height: 78vw;
+  }
+  .texto_coleccion > div > h2 {
+    font-size: 8vw;
+  }
+  .texto_coleccion > div > h1 {
+    font-size: 10vw;
+  }
+  #minimenu{
+    margin-top: 11em;
+  }
+  
   #button-top {
     font-size: 5vw;
   }
@@ -1197,4 +1255,13 @@ h3{
   text-align: center;
   font-size: 0.7em;
   }
+}
+
+
+@media only screen and (max-width: 450px) {
+.texto_coleccion {
+    top: 85vw;
+}
+
+
 }

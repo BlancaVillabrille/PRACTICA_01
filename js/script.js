@@ -113,10 +113,10 @@ $(document).ready(function () {
 
 
   // HOVER DEL MENU
-  $(".icons").mouseover(function () {
+  $(".iconos-desplegables").mouseover(function () {
     $(this).css("color", "var(--color-gris-hover)");
   });
-  $(".icons").mouseout(function () {
+  $(".iconos-desplegables").mouseout(function () {
       $(this).css("color", "black");
   });
 })
