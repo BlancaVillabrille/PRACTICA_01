@@ -6,6 +6,7 @@
   --color-morado: #B37EDB;
   --color-azul-sombra: #0D076B;
   --color-amarillo:#F1CD4B;
+  --color-gris-hover: rgb(134, 134, 134);
 }
 
 
@@ -196,7 +197,7 @@ nav{
 }
 
 #menu> div:nth-child(1){
-  margin-left: 2em;
+  padding-left: 2em;
 }
 
 #menu >  div:nth-child(1) > i{
@@ -347,7 +348,7 @@ body{
 #MasVendidos{
   display: flex;
   flex-direction: column;
-  margin: 10em 0em;
+  margin: 10em 0em 0em 0em;
 }
 
 #MasVendidos > div{
@@ -437,6 +438,355 @@ body{
 
 
 
+/* FOOTER */
+/* seccion newsletter */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+.newsletter_wrapper {
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-right-style: solid;
+  border-left-style:solid;
+  border-width: 2px;
+}
+
+.newsletter_wrapper h2 {
+  color: #000000;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  font-size: 2.9em;
+}
+
+.newsletter_wrapper h1::before {
+  content: "";
+  position: absolute;
+  background: #dddddd;
+  width: 90px;
+  height: 1px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.newsletter_wrapper p {
+  color: #000000;
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+.boton-enviar {
+  position: relative;
+}
+
+.placeholder {
+  margin: 1.4em 0em 0.8em 0em;
+  opacity: 1;
+  width: 24em;
+  height: 3em;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+}
+
+.placeholder input {
+  border-style: hidden;
+  width: 100%;
+  margin: 0px 0px 0px 23px;
+  background-color: transparent;
+}
+
+.enviar button {
+  width: 8.7em;
+  height: 3em;
+  border-style: hidden;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.enviar button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.newsletter_wrapper form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 20px;
+  border-left: 1px solid #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ec9ff;
+}
+
+.newsletter h1 {
+  margin-bottom: 0.6em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* acordeon */
+
+.accordion{
+--bs-accordion-btn-focus-border-color:#F6A2F1;
+--bs-accordion-border-color: black;
+--bs-accordion-active-bg:#F8F2EA;
+--bs-accordion-border-radius:none;
+--bs-accordion-inner-border-radius:none;
+--bs-accordion-btn-focus-background-color:#F6A2F1;
+--bs-accordion-btn-focus-border-color: none; 
+--bs-accordion-btn-focus-box-shadow:none;
+background-color: #F8F2EA;
+
+}
+.accordion-button:not(.collapsed) {
+  border-color: #000000;
+  border-bottom-style: solid;
+
+}
+
+.accordion-body{
+  padding: 0;
+}
+
+.accordion-body div {
+  
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+}
+
+.accordion-body div:active {
+background-color:#f8ead7;
+color: rgb(0, 0, 0);
+}
+
+.accordion-body div:hover {
+  font-weight: bold;
+  }
+
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button{
+  border-radius: 0;
+  padding:1.5em 2.4em 1.5em 3em;
+  
+}
+
+.accordion-item {
+  border-radius:0;
+}
+
+.accordion a{
+  font-size:1.2em;
+}
+
+h3{
+  margin: 0;
+}
+
+
+
+
+
+
+/* footer section */
+
+.footer {
+  height: 45vh;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #f8f2ea;
+  flex-wrap: wrap;
+}
+
+.information a,
+.aboutus a,
+.youneedhelp a {
+  font-size: 0.9em;
+}
+
+.information {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.aboutus {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.youneedhelp {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.redeslogo {
+  height: 25vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: #f8f2ea;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.redes {
+  margin-right: 3em;
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.redes i {
+  display: flex;
+  width: 1.5em;
+  height: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.logofooter {
+  display: flex;
+  margin-left: 3em;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.logofooter img {
+  width: 7.5em;
+}
+
+/* copyright */
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f2ea;
+  padding-bottom: 3em;
+}
+
+.copyright p {
+  margin: 0.3em;
+  font-size: 0.8em;
+}
+
+/* Botones businessmen section */
+.btn-2,
+.btn-2 *,
+.btn-2 :after,
+.btn-2 :before,
+.btn-2:after,
+.btn-2:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-2:disabled {
+  cursor: default;
+}
+.btn-2:-moz-focusring {
+  outline: auto;
+}
+.btn-2 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-2 [hidden] {
+  display: none;
+}
+.btn-2 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-2 span {
+  mix-blend-mode: difference;
+}
+.btn-2:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-2:hover:before {
+  --progress: 0;
+}
 
 
 
@@ -568,9 +918,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    margin-right: 2em;
-    width: 30%;
+    justify-content: space-between;
+    padding-right: 2em;
+    width: 100%;
   }
 
   #menu > div:nth-child(1)> i{
@@ -599,6 +949,12 @@ body{
   #menu > div:nth-child(2) > div:nth-child(2){  
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+  }
+
+  #menu > div:nth-child(2) > div:nth-child(2) > i{  
+    padding: 1em 2em;
+    cursor: pointer;
   }
 
   .nav-item{
@@ -653,6 +1009,113 @@ body{
     font-size: 3vw;
   }
 
+  /* FOOTER */
+  /* newletter */
+
+  .newsletter h1{
+    display: flex;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0em 0em 0.6em 0em;
+  }
+
+  .newsletter_wrapper{
+    padding: 1em;
+  }
+
+  .newsletter_wrapper h2{
+    font-size: 2em;
+  }
+
+  .newsletter_wrapper form {
+  width: 88%;
+  }
+
+  .newsletter p{
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0em 1em 0.5em 1em;
+    text-align: center;
+  }
+
+  .placeholder{
+    width: 19em;
+    margin: 0.8em 0em 0.8em 0em;
+  }
+
+  .newsletter h1{
+    white-space: inherit;
+  }
+
+  .placeholder {
+    height: 2.8em;
+  }
+  .enviar button {
+    width: 7em;
+    height: 2.7em;
+
+  }
+
+  .placeholder input {
+    font-size: 0.9em;
+  }
+
+
+
+  /* TEXTO FOOTER */
+  .footer{
+    flex-direction: column;
+    background-color: #f8f2ea;
+    align-content: left;
+    flex-wrap: nowrap;
+    height: 50vh;
+    padding-top: 2.5em;
+  }
+
+  .information{
+    margin-left:2em;
+  }
+
+  .aboutus{
+    margin-left:2em;
+    justify-content: flex-start;
+    justify-content: center
+  }
+    
+  .youneedhelp{
+    margin-left: 2em;
+    justify-content: flex-start;
+  }
+
+  .redes{
+    margin-right: 2.5em;
+  }
+
+  .redeslogo{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    padding-top: 3em;
+  }
+
+
+  .logofooter{
+    flex-wrap: nowrap;
+    margin-left: 2.5em;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .copyright{
+    padding: 0em 1em 0em 1em;
+  }
+
+  .copyright p{
+    font-size:0.7em;
+    text-align: center;
+    margin-bottom: 1.4em;
+  }
+
 }
 
 
@@ -688,5 +1151,80 @@ body{
 
   #MasVendidos > div > div > div:nth-child(1) {
     height: 94vw;
+  }
+
+
+
+  /* FOOTER */
+  .newsletter_wrapper {
+    height: 50vh;
+  }
+
+  .newsletter_wrapper h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  .newsletter_wrapper h2 {
+    margin-bottom: 0.5em;
+  }
+
+
+  /* accordion */
+
+  .accordion-button{
+    padding-left:2em;
+    padding-right: 1.2em;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-radius: 0s;
+  }
+
+  .accordion-button{
+    padding: 1em 1.2em 1em 2em;
+  }
+
+
+  .accordion-item{
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  h3{
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .accordion-body {
+    padding: 0;
+  }
+
+  .accordion-body a{
+    font-size: 0.9em;
+  }
+
+  .accordion-body div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+  }
+
+  .redes {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .redes i{
+    width: 1.5em;
+  }
+
+  .copyright{
+    padding: 0em 1em 2.4em 1em;
+  }
+  /* copyright */
+  .copyright p{
+  text-align: center;
+  font-size: 0.7em;
   }
 }

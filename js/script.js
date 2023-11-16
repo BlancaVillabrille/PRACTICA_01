@@ -98,7 +98,7 @@ $(document).ready(function () {
   }
 
   $(".fa-bars").on("click", function() {
-    if ($("#visibility").css ("visibility", "hidden")){
+    if ($("#visibility").attr("visibility", "hidden")){
       openMenu();
     }
     else{
@@ -106,17 +106,18 @@ $(document).ready(function () {
     };
     
   });
-  // function Menu(){
-  //   var nav = document.getElementById("visibility");
 
-  //   if (nav.style.visibility == "hidden"){
-  //       openMenu();
-  //   }
-  //   else{
-  //       closeMenu();
-  //   }
-  // }
 
+
+
+
+  // HOVER DEL MENU
+  $(".icons").mouseover(function () {
+    $(this).css("color", "var(--color-gris-hover)");
+  });
+  $(".icons").mouseout(function () {
+      $(this).css("color", "black");
+  });
 })
 
 
