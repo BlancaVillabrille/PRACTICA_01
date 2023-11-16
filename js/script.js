@@ -26,19 +26,60 @@
 
 $(document).ready(function () {
 
-$("#closebutton").on("click", function(event) {
-  var cookies = $(".cookies");
-  cookies.animate({ opacity: 0.05}, function() {
-      cookies.fadeOut();
+    // COOKIES
+  $("#closebutton").on("click", function(event) {
+    var cookies = $(".cookies");
+    cookies.animate({ opacity: 0.05}, function() {
+        cookies.fadeOut();
+    });
   });
-});
 
-$("#closebutton2").on("click", function(event) {
-  var cookies = $(".cookies");
-  cookies.animate({ opacity: 0.05}, function() {
-      cookies.fadeOut();
+  $("#closebutton2").on("click", function(event) {
+    var cookies = $(".cookies");
+    cookies.animate({ opacity: 0.05}, function() {
+        cookies.fadeOut();
+    });
   });
-});
+
+
+
+  // MAS VENDIDOS CAMBIO DE COLOR
+  // BOTON 1
+  $("#silver1").on("click", function() {
+    $("#vendidos1").attr("src", "media/img/Pulsera 2.png");
+  });
+
+  $("#gold1").on("click", function() {
+    $("#vendidos1").attr("src", "media/img/Pulsera 1.png");
+  });
+
+
+  // BOTON 2
+  $("#silver2").on("click", function() {
+    $("#vendidos2").attr("src", "media/img/Pulsera 3.png");
+  });
+
+  $("#gold2").on("click", function() {
+    $("#vendidos2").attr("src", "media/img/Pulsera 2.png");
+  });
+
+  // BOTON 3
+  $("#silver3").on("click", function() {
+    $("#vendidos3").attr("src", "media/img/Pulsera 4.png");
+  });
+
+  $("#gold3").on("click", function() {
+    $("#vendidos3").attr("src", "media/img/Pulsera 3.png");
+  });
+
+  // BOTON 4
+  $("#silver4").on("click", function() {
+    $("#vendidos4").attr("src", "media/img/Pulsera 1.png");
+  });
+
+  $("#gold4").on("click", function() {
+    $("#vendidos4").attr("src", "media/img/Pulsera 4.png");
+  });
 
 
 
@@ -46,27 +87,26 @@ $("#closebutton2").on("click", function(event) {
 
 
 
-// // MENU 
-//   // SCROLL TOP 
-//   var mybutton = document.getElementById("button-top");
+  // SCROLL TOP 
+  var mybutton = document.getElementById("button-top");
 
-//   window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {scrollFunction()};
   
-//   function scrollFunction() {
-//     if (document.body.scrollTop > 20 , document.documentElement.scrollTop > 20) {
-//       mybutton.style.display = "block";
-//     } else {
-//       mybutton.style.display = "none";
-//     }
-//   }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 , document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
 
-//   $("#button-top").click(function (){
+  $("#button-top").click(function (){
     
-//     var heightPage = $("header").height();
-//     $(window).scrollTop(0 + heightPage);
-//   });
+    // var heightPage = $("header").height();
+    // $(window).scrollTop(0 + heightPage);
 
-
+    $(window).scrollTop(0);
+  });
 
 
 
