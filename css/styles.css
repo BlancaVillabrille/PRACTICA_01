@@ -69,6 +69,8 @@
   transition-duration: 1s;
   opacity: 1;
   padding-right: 30px;
+  margin-bottom: 2em;
+  align-items: center;
 }
 
 .buttons :hover {
@@ -88,7 +90,7 @@
   color: rgb(99, 99, 99);
   font-size: 11px;
   margin-left: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   display: flex;
   align-content: center;
 }
@@ -305,9 +307,9 @@ body{
   background-color: var(--bg-color);
 }
 
-/* SECCION1 MINIMENU*/
+/* SECCION 1 MINIMENU*/
 #minimenu{
-  margin-top: 3em;
+  margin-top: 10em;
 }
 
 .col{
@@ -319,34 +321,18 @@ body{
 
 .col> img{
   max-width: 50%;
-    
+}
+
+.botonminimenu{
+  position: relative;
+  top: 1.5vw;
+}
+
+.row>* {
+  border: 2px solid black;
 }
 
 
-
-
-/* SECCION2 DESLUMBRA */
-
-#deslumbra{
-  margin-top: 5em;
-  font-family: 'myFirstFont';
-}
-
-#deslumbra > div{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-left: 2em;
-}
-
-#deslumbra > div > h2{
-  font-size: 15vw;
-}
-
-#deslumbra > div > div> p{
-  font-size: 3vw;
-}
-/* SECCION 3 */
 
 
 
@@ -358,7 +344,7 @@ body{
 #MasVendidos{
   display: flex;
   flex-direction: column;
-  margin: 2em 0em;
+  margin: 10em 0em;
 }
 
 #MasVendidos > div{
@@ -393,7 +379,6 @@ body{
 #MasVendidos > div:nth-child(3) > div:nth-child(2)> div:nth-child(1){
   background-color: var(--color-morado);
 }
-
 
 #MasVendidos > div > div > div:nth-child(2) {
   width: 100%;
@@ -459,7 +444,7 @@ body{
 
 
 
-
+/* RESPONSIVE */
 
 /* COOKIES */
 @keyframes show-cookies {
@@ -476,15 +461,17 @@ body{
 @media (max-width: 990px) {
   .cookie-info {
     font-size: 0.6em;
-    padding: 0px 20px 60px 20px;
+    padding: 10px 20px 0px 20px;
     text-align: justify;
   }
   .cookie-banner-container {
-    height: 35%;
+    height: auto;
   }
 
   .buttons {
     padding-right: 20px;
+    padding-bottom: 1em;
+    align-items: center
   }
 
   .jully-logo {
@@ -503,7 +490,8 @@ body{
 
   .second-button {
     font-size: 0.5em;
-    margin-left: 20px;
+  margin-bottom: 0;
+
   }
 }
 
@@ -556,7 +544,7 @@ body{
 
 
 
-
+/* RESPONSIVE */
 /* MAIN */
 
 @media only screen and (max-width: 1135px) {
@@ -641,6 +629,20 @@ body{
   }
 
 
+  /* SECCION 1 MINIMENU*/
+
+  .row {
+    flex-direction: column;
+  }
+  .col> img{
+    width: auto;
+  }
+  .col> a > button{
+    font-size: 4vw;
+  }
+
+
+/* MAS VENDIDOS */
   #MasVendidos > div {
     flex-direction: column;
   }
