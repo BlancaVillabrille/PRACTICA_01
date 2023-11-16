@@ -9,12 +9,13 @@
   --color-gris-hover: rgb(134, 134, 134);
 }
 
-
-.h1, .h2 , .h3, p {
-  font-family: 'Sora', sans-serif;
+.h1,
+.h2,
+.h3,
+p,
+a {
+  font-family: "Sora", sans-serif;
 }
-
-
 
 /* cookies */
 .cookies {
@@ -35,8 +36,6 @@
 .confirm-button {
   background-color: #9ec9ff;
 }
-
-
 
 .reject-button {
   background-color: white;
@@ -131,10 +130,6 @@
   box-shadow: 0px 4px 8px rgba(90, 90, 90, 0.1);
 }
 
-
-
-
-
 /* MENU */
 /* BOTONA ARRIBA */
 #button-top {
@@ -146,7 +141,7 @@
   color: #000000;
   background-color: white;
   text-decoration: none;
-  font-size: 1.5VW;
+  font-size: 1.5vw;
   /* text-transform: uppercase; */
   border: 2px solid #000000;
   border-radius: 30px;
@@ -158,22 +153,20 @@
   transition: all 200ms ease;
 }
 #button-top:hover {
-background-color: #555;
+  background-color: #555;
 }
 
-
-
 /* HEADER */
-header{
+header {
   /* height: 100vh; */
   overflow: hidden;
 }
 
 /* NAV */
-.bg-body-tertiary{
+.bg-body-tertiary {
   background-color: white;
 }
-#menu{
+#menu {
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -185,7 +178,7 @@ header{
   background-color: white;
 }
 
-nav{
+nav {
   height: 6vh;
   display: flex;
   justify-content: space-between;
@@ -196,25 +189,29 @@ nav{
   z-index: 30;
 }
 
-#menu> div:nth-child(1){
+.colection-capsule, .bestseller, .categories{
+ font-size:1em;
+}
+
+#menu > div:nth-child(1) {
   padding-left: 2em;
 }
 
-#menu >  div:nth-child(1) > i{
+#menu > div:nth-child(1) > i {
   display: none;
 }
 
-#logo{
-  width: 3em;;
+#logo {
+  width: 3em;
 }
 
 /* BOTONES MENU  DESPLEGABLE */
-#menu > div:nth-child(2){
+#menu > div:nth-child(2) {
   display: flex;
   flex-direction: row;
 }
 /* BOTONES MENU CENTRAL */
-#menu > div > ul{
+#menu > div > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -223,36 +220,28 @@ nav{
 }
 
 /* BOTONES MENU DCHA */
-#menu > div:nth-child(2) > div:nth-child(2){
+#menu > div:nth-child(2) > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 10em;
   justify-content: space-evenly;
-  margin-RIGHt: 2em;
+  margin-right: 2em;
 }
 
-
-
-
-
 /* CARRUSEL */
-.carousel{
+.carousel {
   top: 4em;
   position: relative;
 }
 
-.carousel-item{
+.carousel-item {
   width: 100%;
   object-fit: cover;
 }
 
-
-
-
-
 /* TEXTO COLECCION */
-.texto_coleccion{
+.texto_coleccion {
   display: flex;
   flex-direction: row;
   top: 35vw;
@@ -261,25 +250,23 @@ nav{
   position: absolute;
   margin-left: 5em;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
-.texto_coleccion > div > h1{
+.texto_coleccion > div > h1 {
   font-size: 4em;
 }
 
-.texto_coleccion > div > h2{
+.texto_coleccion > div > h2 {
   font-size: 3em;
 }
-
-
 
 /* BOTON */
 .btn {
   color: #000000;
   background-color: white;
   text-decoration: none;
-  font-size: 1.5VW;
+  font-size: 1.5vw;
   /* text-transform: uppercase; */
   border: 2px solid #000000;
   border-radius: 30px;
@@ -296,67 +283,70 @@ nav{
 
 .btn:hover {
   inset: 6px 0 5.5px 0;
-  transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+  transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
   box-shadow: none;
   color: #000000;
   background-color: white;
   border: 2px solid #000000;
 }
 
-
-
-
 /* MAIN */
-body{
+body {
   background-color: var(--bg-color);
 }
 
 /* SECCION 1 MINIMENU*/
-#minimenu{
+#minimenu {
   margin-top: 10em;
 }
 
-.col{
+.dropdown-menu {
+  --bs-dropdown-border-color:none;
+  --bs-dropdown-bg: white;
+  --bs-dropdown-border-radius: none;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+}
+
+.bg-body-tertiary {
+  background-color: white !important;
+}
+
+.col {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-azul);
 }
 
-.col> img{
+.col > img {
   max-width: 50%;
 }
 
-.botonminimenu{
+.botonminimenu {
   position: relative;
   top: 1.5vw;
 }
 
-.row>* {
+.row > * {
   border: 2px solid black;
 }
 
-
-
-
-
-
-
-
-
 /* LOS MÁS VENDIDOS */
-#MasVendidos{
+#MasVendidos {
   display: flex;
   flex-direction: column;
   margin: 10em 0em 0em 0em;
 }
 
-#MasVendidos > div{
+#MasVendidos > div {
   display: flex;
   flex-direction: row;
 }
 
-#MasVendidos > div > div{
+#MasVendidos > div > div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -364,7 +354,7 @@ body{
   border: 2px solid black;
 }
 
-#MasVendidos > div > div > div:nth-child(1){
+#MasVendidos > div > div > div:nth-child(1) {
   height: 40vw;
   width: 100%;
   display: flex;
@@ -372,15 +362,15 @@ body{
   background-color: var(--color-rosa);
 }
 
-#MasVendidos > div:nth-child(2) > div:nth-child(2)> div:nth-child(1){
+#MasVendidos > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
   background-color: var(--color-azul);
 }
 
-#MasVendidos > div:nth-child(3) > div:nth-child(1)> div:nth-child(1){
+#MasVendidos > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
   background-color: var(--color-amarillo);
 }
 
-#MasVendidos > div:nth-child(3) > div:nth-child(2)> div:nth-child(1){
+#MasVendidos > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
   background-color: var(--color-morado);
 }
 
@@ -394,7 +384,7 @@ body{
   background-color: white;
 }
 
-#MasVendidos > div > div > div > img{
+#MasVendidos > div > div > div > img {
   height: 100%;
 }
 
@@ -421,18 +411,20 @@ body{
 
 .btn_change_color:hover {
   inset: 6px 0 5.5px 0;
-  transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+  transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
   box-shadow: none;
   color: #000000;
   background-color: white;
   border: 2px solid #000000;
 }
 
-.one, .one:hover{
+.one,
+.one:hover {
   background-color: silver;
 }
 
-.two, .two:hover{
+.two,
+.two:hover {
   background-color: gold;
 }
 
@@ -824,13 +816,13 @@ h3{
   .buttons {
     padding-right: 20px;
     padding-bottom: 1em;
-    align-items: center
+    align-items: center;
   }
 
   .jully-logo {
     padding: 5px 3px 5px 20px;
   }
-  
+
   .buttons button {
     font-size: 0.8em;
     width: 10.5em;
@@ -843,18 +835,21 @@ h3{
 
   .second-button {
     font-size: 0.5em;
-  margin-bottom: 0;
-
+    margin-bottom: 0;
   }
 }
 
 /* responsive movil */
 
 @media only screen and (max-width: 576px) {
+  .texto_coleccion {
+    position: sticky;
+  }
+
   .cookie-info {
     margin: 0px 15px 10px 15px;
   }
-    .jully-logo {
+  .jully-logo {
     padding: 5px 3px 5px 15px;
   }
 
@@ -864,7 +859,7 @@ h3{
 
   .buttons button {
     font-size: 0.7em;
-    width: 100%;
+    width: 90%;
     height: 3.2em;
     margin: 0.3em;
   }
@@ -881,40 +876,28 @@ h3{
   }
 
   .second-button {
-    margin-left: 15px;
-    margin-bottom: 12px;
+    margin-left: 0px;
+    margin-top: 0.6em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* RESPONSIVE */
 /* MAIN */
 
 @media only screen and (max-width: 1135px) {
-
   #button-top:hover {
-    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
     box-shadow: none;
     color: #000000;
     background-color: white;
     border: 2px solid #000000;
   }
-  /* NAVBAR */ 
+  /* NAVBAR */
   #menu {
     flex-direction: column;
     align-items: flex-start;
-}
-  #menu> div:nth-child(1) {
+  }
+  #menu > div:nth-child(1) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -923,7 +906,7 @@ h3{
     width: 100%;
   }
 
-  #menu > div:nth-child(1)> i{
+  #menu > div:nth-child(1) > i {
     display: flex;
     cursor: pointer;
     padding-right: 3em;
@@ -938,7 +921,6 @@ h3{
     width: 100%;
     padding-top: 1em;
   }
-  
 
   #menu > div > ul {
     flex-direction: column;
@@ -946,7 +928,7 @@ h3{
     justify-content: space-between;
     width: 100%;
   }
-  #menu > div:nth-child(2) > div:nth-child(2){  
+  #menu > div:nth-child(2) > div:nth-child(2) {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -957,23 +939,21 @@ h3{
     cursor: pointer;
   }
 
-  .nav-item{
+  .nav-item {
     padding-left: 2em;
   }
   .nav-link {
     width: 100%;
   }
 
-
   /* DROPDOWN */
   .dropdown-menu {
     border-radius: 0px;
     width: 100%;
   }
-  .dropdown{
+  .dropdown {
     width: 100%;
   }
-
 
   /* COLECCION CAPSULA */
   .btn {
@@ -982,30 +962,25 @@ h3{
 
   .texto_coleccion {
     width: 20em;
-    top: 42vw;   
+    top: 42vw;
     width: 24em;
   }
 
-  .texto_coleccion > div > h1{
+  .texto_coleccion > div > h1 {
     font-size: 3em;
   }
-  
-  .texto_coleccion > div > h2{
+
+  .texto_coleccion > div > h2 {
     font-size: 2em;
   }
-
-
-
 }
-
-
 
 @media only screen and (max-width: 800px) {
   #MasVendidos > div > div > div:nth-child(2) {
-  padding: 2em;
+    padding: 2em;
   }
 
-  #button-top{
+  #button-top {
     font-size: 3vw;
   }
 
@@ -1118,34 +1093,29 @@ h3{
 
 }
 
-
-
 @media only screen and (max-width: 580px) {
-
-  #button-top{
+  #button-top {
     font-size: 5vw;
   }
-
 
   /* SECCION 1 MINIMENU*/
 
   .row {
     flex-direction: column;
   }
-  .col> img{
+  .col > img {
     width: auto;
   }
-  .col> a > button{
+  .col > a > button {
     font-size: 4vw;
   }
 
-
-/* MAS VENDIDOS */
+  /* MAS VENDIDOS */
   #MasVendidos > div {
     flex-direction: column;
   }
 
-  #MasVendidos > div > div > div > img{
+  #MasVendidos > div > div > div > img {
     width: auto;
   }
 
