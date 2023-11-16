@@ -169,6 +169,9 @@ header{
 }
 
 /* NAV */
+.bg-body-tertiary{
+  background-color: white;
+}
 #menu{
   display: flex;
   flex-direction: row;
@@ -548,6 +551,14 @@ body{
 /* MAIN */
 
 @media only screen and (max-width: 1135px) {
+
+  #button-top:hover {
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
+    color: #000000;
+    background-color: white;
+    border: 2px solid #000000;
+  }
   /* NAVBAR */ 
   #menu {
     flex-direction: column;
@@ -557,34 +568,55 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-right: 2em;
+    width: 30%;
   }
 
   #menu > div:nth-child(1)> i{
     display: flex;
+    cursor: pointer;
+    padding-right: 3em;
   }
 
   #menu > div:nth-child(2) {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    padding-top: 1em;
   }
+  
 
   #menu > div > ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-  
+    width: 100%;
   }
-  #menu > div:nth-child(2) > div:nth-child(2){
-    visibility: hidden;   
+  #menu > div:nth-child(2) > div:nth-child(2){  
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .nav-item{
+    padding-left: 2em;
+  }
+  .nav-link {
+    width: 100%;
+  }
 
+
+  /* DROPDOWN */
+  .dropdown-menu {
+    border-radius: 0px;
+    width: 100%;
+  }
+  .dropdown{
+    width: 100%;
+  }
 
 
   /* COLECCION CAPSULA */
@@ -605,6 +637,9 @@ body{
   .texto_coleccion > div > h2{
     font-size: 2em;
   }
+
+
+
 }
 
 

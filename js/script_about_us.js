@@ -22,4 +22,5 @@ $(document).ready(function () {
         $("#imginicial").attr("src", "media/img/imginicial.jpg");
     });
 
+
 })
