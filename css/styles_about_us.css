@@ -280,7 +280,7 @@ textarea:focus {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 0.3em;
-  font-size: 3.3em;
+  font-size: 2.9em;
 }
 
 .newsletter_wrapper h1::before {
@@ -780,14 +780,14 @@ h3{
   }
 
   .newsletter p{
-    font-size: 0.9em;
+    font-size: 1.1em;
     margin: 0;
     padding: 0em 1em 0.5em 1em;
     text-align: center;
   }
   
   .placeholder{
-    width: 14em;
+    width: 19em;
     margin: 0.8em 0em 0.8em 0em;
   }
 
@@ -796,18 +796,16 @@ h3{
   }
 
   .placeholder {
-    height: 2.5em;
-  }
+    height: 2.8em;
+}
   .enviar button {
     width: 7em;
-    height: 2.5em;
+    height: 2.7em;
   
 }
 
-
-
   .placeholder input {
-    font-size: 0.8em;
+    font-size: 0.9em;
    }
 
 
