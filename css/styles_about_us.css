@@ -816,9 +816,8 @@ h3{
     background-color: #f8f2ea;
     align-content: left;
     flex-wrap: nowrap;
-    height: 70vh;
+    height: 50vh;
     padding-top: 2.5em;
-    padding-bottom: 2em;
   }
 
   .information{
@@ -857,7 +856,13 @@ h3{
   }
 
   .copyright{
-    padding-top: 2.4em;
+    padding: 0em 1em 0em 1em;
+  }
+
+  .copyright p{
+    font-size:0.7em;
+    text-align: center;
+    margin-bottom: 1.4em;
   }
 
   
