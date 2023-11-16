@@ -94,11 +94,12 @@ $(document).ready(function () {
   }
 
   function closeMenu(){
+    document.getElementById("menu").style.height = "4em";
     document.getElementById("visibility").style.visibility = "hidden";
   }
 
   $(".fa-bars").on("click", function() {
-    if ($("#visibility").css ("visibility", "hidden")){
+    if ($("#visibility").css("visibility") === "hidden"){
       openMenu();
     }
     else{
