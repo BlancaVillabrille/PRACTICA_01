@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
   // cambiarimagen de perfiles
-    $("#perfilmacarena").hover(function FadeIn(){
+    $("#perfilmacarena").hover(function (){
         $("#imginicial").attr("src", "media/img/businessmen 3.jpg");
     }, function(){
         $("#imginicial").attr("src", "media/img/imginicial.jpg");
@@ -21,5 +21,6 @@ $(document).ready(function () {
     }, function(){
         $("#imginicial").attr("src", "media/img/imginicial.jpg");
     });
+
 
 })
