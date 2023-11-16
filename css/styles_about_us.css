@@ -6,7 +6,6 @@
 }
 
 h3,
-h2,
 h1,
 a,
 p {
@@ -40,7 +39,7 @@ h1{
 
 .workers-photos img {
   width: 400px;
-  height: 550px;
+  height: 450px;
   object-fit: cover;
   display: flex;
   position: absolute;
@@ -309,7 +308,7 @@ textarea:focus {
   margin: 1.4em 0em 0.8em 0em;
   opacity: 1;
   width: 24em;
-  height: 2.9em;
+  height: 3em;
   background-color: white;
   display: flex;
   justify-content: flex-start;
@@ -369,19 +368,41 @@ textarea:focus {
 .accordion{
 --bs-accordion-btn-focus-border-color:#F6A2F1;
 --bs-accordion-border-color: black;
---bs-accordion-active-bg:#F6A2F1;
+--bs-accordion-active-bg:#F8F2EA;
 --bs-accordion-border-radius:none;
 --bs-accordion-inner-border-radius:none;
 --bs-accordion-btn-focus-background-color:#F6A2F1;
 --bs-accordion-btn-focus-border-color: none; 
 --bs-accordion-btn-focus-box-shadow:none;
-
+background-color: #F8F2EA;
 
 }
 .accordion-button:not(.collapsed) {
-  background-color: #F6A2F1;
-  border-color: #F6A2F1;
+  border-color: #000000;
+  border-bottom-style: solid;
+
 }
+
+.accordion-body{
+  padding: 0;
+}
+
+.accordion-body div {
+  
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+}
+
+.accordion-body div:active {
+background-color:#f8ead7;
+color: rgb(0, 0, 0);
+}
+
+.accordion-body div:hover {
+  font-weight: bold;
+  }
+
 
 .accordion-item:first-of-type .accordion-button {
   border-radius: 0;
@@ -405,14 +426,9 @@ h3{
   margin: 0;
 }
 
-.accordion-body {
-  padding-left: 3em;
-}
 
-.accordion-body div {
-  margin-top: 1em;
-  margin-bottom:1em;
-}
+
+
 
 
 /* footer section */
@@ -606,7 +622,7 @@ h3{
 @media only screen and (max-width: 1135px){
   /* businessmen section */
   .businessmen{
-    height: 88vw;
+    height: 80vw;
   }
 
   .categories button {
@@ -622,7 +638,7 @@ h3{
 
   .workers-photos img {
     width: 40vw;
-    height: 55vw;
+    height: 50vw;
   }
   
 
@@ -660,7 +676,7 @@ h3{
   }
 
   .newsletter_wrapper {
-    height: 60vh
+    height: 85vh
   }
 
 }
@@ -672,9 +688,6 @@ h3{
 
 @media only screen and (max-width: 850px){
 
-
-  
-
   /* about */
   .about {
     flex-direction: column;
@@ -685,7 +698,7 @@ h3{
   }
   
   .imagen_fondo{
-    height: 40vh;
+    height: 60vh;
   }
 
   .who h1 {
@@ -825,27 +838,31 @@ h3{
     justify-content: flex-start;
   }
 
-  .redeslogo{
-    display: flex;
-    flex-direction: column;
-    height:30vh;
+  .redes{
+    margin-right: 2.5em;
   }
 
-  .redes{
-    margin:0;
+  .redeslogo{
+    display: flex;
+    flex-direction: row;
+    height:30vh;
+    padding-top: 3em;
   }
+
 
   .logofooter{
     flex-wrap: nowrap;
-    margin:0;
-    align-items: center;
+    margin-left: 2.5em;
+    align-items: flex-start;
+    display: flex;
+}
   }
 
   .copyright{
     padding-top: 2.4em;
   }
 
-}
+  
 
 
 
@@ -861,13 +878,12 @@ h3{
     flex-direction: column;
     align-items: center;
     flex: 0;
-    margin: 5vw 1em 1.4em 1em;
   }
 
   .workers-photos {
     margin: 0;
     width:100%;
-    height:60vw;
+    height:70vw;
     justify-content: center;
     flex: none;
   }
@@ -880,7 +896,7 @@ h3{
     height: 12vw;
     width: 40vw;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
   }
 
   .categories button a {
@@ -888,8 +904,8 @@ h3{
   }
 
   .about h2{
-    font-size:1.2em;
-    margin-bottom: 0.3em;
+    font-size:1.4em;
+    margin-bottom: 0.5em;
   }
   .about p {
     font-size: 0.8em;
@@ -899,19 +915,19 @@ h3{
   .redeslogo{
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 2em;
-    height: 25vh;
+    height: 35vh;
    }
 
    .imagen_fondo {
-    height: 20vh;
+    height: 38vh;
 }
    
   /* location */
-  .location{
-    height: 100vw;
-  }
+  .location {
+    height: 70vh;
+}
 
   .findus {
     width: 100%;
@@ -923,8 +939,8 @@ h3{
     width: 100%;
   }
 
-  .findus > div a, p{
-    font-size: 0.7em;
+  .findus a, p{
+    font-size: 0.8em;
   }
 
   .google-maps div iframe {
@@ -932,11 +948,16 @@ h3{
   }
 
   .newsletter_wrapper {
-    height: 45vh;
+    height: 50vh;
 }
 
 .newsletter_wrapper h2 {
   font-size: 1.4em;
+  font-weight: bold;
+}
+
+.newsletter_wrapper h2 {
+  margin-bottom: 0.5em;
 }
 
 
@@ -967,7 +988,7 @@ h3{
 }
 
 .accordion-body {
-  padding: 0em 0em 0em 2em;
+  padding: 0;
 }
 
 .accordion-body a{
@@ -975,13 +996,14 @@ h3{
 }
 
 .accordion-body div {
-  margin-top: 1em;
-  margin-bottom:1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
 }
 
 .redes {
   margin: 0;
-  justify-content: center
+  justify-content: center;
 }
 
 .redes i{

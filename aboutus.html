@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles_about_us.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;700;800&display=swap" rel="stylesheet">
     <script src="js/aos.js"></script>
 
@@ -25,6 +26,7 @@
           <h1>ABOUT US</h1>
       </div>          
   </div>
+  
     <section class="businessmen">
       <div class="workers-photos">
         <img id="imginicial" src="media/img/imginicial.jpg" id="imgchange" alt="Imagen inicial">
@@ -37,10 +39,14 @@
         <button id="perfilsandra" type="button" class="btn btn-outline-1"><a>SANDRA</a></button>
         <button id="perfilpablo" type="button" class="btn btn-outline-3"><a>PABLO</a></button>
       </div>
+      
     </section>
 
+    
     <section class="about">
       <div class="who">
+        <!-- AOS WHO -->
+        <div data-aos="fade-right"data-aos-duration="800">
         <h2>QUIÉNES SOMOS</h2>
         <p>
           Somos un pequeña comunidad con base en Madrid que tiene como inspiración
@@ -48,31 +54,44 @@
           Orense 36, cerca de Nuevos Ministerios.
         </p>
       </div>
+      </div>
       <div class="compromise">
+        <!-- AOS COMPROMISE -->
+        <div data-aos="fade-left"data-aos-duration="800">
         <h2> COMPROMISO</h2>
         <p>
-          Nos comprometemos a ofrecerles productos de gran calidad y elaborados a mano cuidando cada detalle. En Jully recibiréis un <b>tratamiento personalizado</b> en tus compras, para asegurarnos de que encuentres la joya perfecta para ti.
+          Nos comprometemos a ofrecerles productos de gran calidad y elaborados a mano cuidando cada detalle. En Jully recibiréis un <b>tratamiento personalizado</b> en tus compras, para asegurarnos que encuentres la joya perfecta para ti.
         </p>
       </div>
+    </div>
     </section>
 
     <div class="imagen_fondo"></div>
     
     <section class="location">
       <div class="findus">
+        <div data-aos="fade-right"data-aos-duration="800">
         <h2>PUNTO DE VENTA</h2>
         <p>Parada de metro cuzco o línea de autobús 147.</p>
         <em><b><a href="https://maps.app.goo.gl/CZEh3Lq9pEnJw2K19"style="text-decoration:none"target=_blank>Calle orense 36, Nuevos Ministerios.</a></b></em>
         <a href="tel:+34 (900) 868 - 532">+34 (900) 868 - 532</a>
       </div>
+    </div>
+
       <div class="google-maps">
+        <!-- AOS GOOGLE MAPS -->
+        <div data-aos="fade-up"data-aos-duration="1000"
+     data-aos-anchor-placement="top-bottom">
             <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.9226174148907!2d-3.6971967242817954!3d40.454849653318796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422902920f8a35%3A0x1dd626e4038d0c38!2sC.%20de%20Orense%2C%2036%2C%2028020%20Madrid!5e0!3m2!1ses!2ses!4v1699204007367!5m2!1ses!2ses" width="680" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>  
+        </div>
       </div>
     </section>
 
     <section class="newsletter">
+      <!-- AOS NEWSLETTER -->
+      <div data-aos="fade-up"data-aos-duration="1400"data-aos-anchor-placement="top-bottom">
       <div class="title-newsletter">
       
           <title>Newsletter</title>
@@ -85,21 +104,25 @@
     
           
           <div class="newsletter_wrapper">
-            <h2>SUSCRÍBETE A <br>LA NEWSLETTER</h2>
-              <p>Consigue un <b>10% de descuento</b>. <br> Suscríbete a nuestra newsletter y tendrás acceso a <br>novedades y ventajas exclusivas en tu email.</p>
-                <div class="input">
-                  <div class="placeholder">
-                      <input type="text" placeholder="Escribir correo electrónico">
+             <h2>SUSCRÍBETE A <br>LA NEWSLETTER</h2>
+               <p>Consigue un <b>10% de descuento</b>. <br> Suscríbete a nuestra newsletter y tendrás acceso a <br>novedades y ventajas exclusivas en tu email.</p>
+                 <div class="input">
+                   <div class="placeholder">
+                     <input type="text" placeholder="Escribir correo electrónico">
+                   </div>
+                 </div>
+                    <div class="enviar">
+                      <button>Enviar</button>
                     </div>
-                </div>
-                <div class="enviar">
-                  <button>Enviar</button>
-                </div>
           </div>
+        </div>
+      </div>
+        
     </section>
 
   
-    <footer>
+    <section class="accordion">
+      <!-- AOS ACORDEON -->
     <div class="accordion" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -145,9 +168,10 @@
         </div>
       </div>
     </div>
-       
-    </footer>
-    
+  </div>
+       </section>
+  
+    <footer>
       <div class="redeslogo">
         <div class="redes">
           <i class="fa-solid fa-envelope"style="font-size:30px;"></i>
@@ -172,7 +196,7 @@
           <p><u><b>Política de privacidad</u>  &nbsp <u>Política de cookies</u>  &nbsp <u>Aviso legal</b></u></p>
         </div>
       </div> 
-  
+    </footer>
   
 
 
